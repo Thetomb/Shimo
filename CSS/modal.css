@@ -1,0 +1,204 @@
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+.image-modal-content {
+    background: transparent;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 2.5% auto;
+    padding: 0;
+}
+
+.image-modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #667eea;
+    background: white;
+    transform: scale(1.1);
+}
+
+.image-modal-content .close {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    top: -50px;
+    right: 0;
+}
+
+.image-modal-content .close:hover {
+    background: rgba(0,0,0,0.9);
+    color: white;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 团队成员详情模态框 */
+.member-details {
+    padding: 40px;
+}
+
+.member-details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.member-details-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.member-details-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-details-info h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.member-details-info .title {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.member-details-info .education {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.member-details-content {
+    line-height: 1.8;
+}
+
+.member-details-content h3 {
+    color: #2c3e50;
+    margin: 25px 0 15px;
+    font-size: 1.2rem;
+}
+
+.member-details-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.member-achievements {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.member-achievements h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.member-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.member-achievements li {
+    color: #666;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.member-achievements li::before {
+    content: '•';
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        max-height: 70vh;
+    }
+    
+    .member-details {
+        padding: 20px;
+    }
+    
+    .member-details-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .member-details-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
