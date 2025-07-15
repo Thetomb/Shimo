@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis-Modell Höhenverstellbare Schreibtische - Shimo Intelligente Höhenverstellbare Schreibtische</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/basic-products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigationsleiste Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachumschalter -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="basic-products-en.html" class="lang-btn">English</a>
+                <a href="basic-products-de.html" class="lang-btn active">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seitenkopf -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Basis-Modell Höhenverstellbare Schreibtische</h1>
+            <div class="breadcrumb">
+                <a href="index-de.html">Startseite</a> > <a href="products-de.html">Produkte</a> > <span>Basis-Modell</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktkategorie Navigation -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-de.html" class="category-tab">Alle</a>
+                <a href="basic-products-de.html" class="category-tab active">Basis</a>
+                <a href="premium-products-de.html" class="category-tab">Premium</a>
+                <a href="smart-products-de.html" class="category-tab">Smart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basis-Modell Produkteinführung -->
+    <section class="category-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Schlichte und praktische klassische Wahl</h2>
+                    <p>Die Basis-Modell Serie höhenverstellbarer Schreibtische bietet eine stabile und zuverlässige Höhenverstellung und erfüllt die täglichen Büro- und Lernbedürfnisse zu einem erschwinglichen Preis. Hergestellt aus hochwertigen Materialien mit schlichtem Design, das zu jeder Umgebung passt.</p>
+                    <ul class="feature-list">
+                        <li>Manuelle oder elektrische Höhenverstellung</li>
+                        <li>Robuste Stahlrahmen-Konstruktion</li>
+                        <li>Ausgezeichnetes Preis-Leistungs-Verhältnis</li>
+                        <li>Verschiedene Tischplattenmaterialien verfügbar</li>
+                        <li>Einfache und benutzerfreundliche Bedienung</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <img src="picture/122.png" alt="Basis-Modell Höhenverstellbarer Schreibtisch">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktfilter -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Preisbereich</label>
+                    <select id="priceFilter">
+                        <option value="all">Alle Preise</option>
+                        <option value="0-800">€0-800</option>
+                        <option value="800-1200">€800-1200</option>
+                        <option value="1200+">€1200+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Tischplattenmaterial</label>
+                    <select id="materialFilter">
+                        <option value="all">Alle Materialien</option>
+                        <option value="wood">Massivholz</option>
+                        <option value="bamboo">Bambus</option>
+                        <option value="mdf">MDF-Platte</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Farbe</label>
+                    <select id="colorFilter">
+                        <option value="all">Alle Farben</option>
+                        <option value="natural">Naturholz</option>
+                        <option value="white">Reinweiß</option>
+                        <option value="black">Klassisches Schwarz</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Filter anwenden</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktliste -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="basicProductsGrid">
+                <!-- Basis-Modell Produkte werden dynamisch über JavaScript geladen -->
+                <!-- Beispiel Produktkarten -->
+                <div class="product-card" data-price="799" data-material="mdf" data-color="white">
+                    <div class="product-image">
+                        <img src="picture/123.png" alt="Schlichter Elektrischer Höhenverstellbarer Schreibtisch">
+                        <div class="product-tag">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Schlichter Elektrischer Höhenverstellbarer Schreibtisch</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <p class="product-price">€799</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-1" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-1">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="899" data-material="wood" data-color="natural">
+                    <div class="product-image">
+                        <img src="picture/124.png" alt="Massivholz Höhenverstellbarer Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Massivholz Höhenverstellbarer Schreibtisch</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(28)</span>
+                        </div>
+                        <p class="product-price">€899</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-2" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-2">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="999" data-material="bamboo" data-color="natural">
+                    <div class="product-image">
+                        <img src="picture/125.png" alt="Bambus Höhenverstellbarer Arbeitsplatz">
+                        <div class="product-tag">Umweltfreundlich</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bambus Höhenverstellbarer Arbeitsplatz</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(36)</span>
+                        </div>
+                        <p class="product-price">€999</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-3" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-3">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="1299" data-material="mdf" data-color="black">
+                    <div class="product-image">
+                        <img src="picture/126.png" alt="Dual-Motor Höhenverstellbarer Schreibtisch">
+                        <div class="product-tag">Neu</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dual-Motor Höhenverstellbarer Schreibtisch</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(15)</span>
+                        </div>
+                        <p class="product-price">€1299</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-4" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-4">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="749" data-material="mdf" data-color="white">
+                    <div class="product-image">
+                        <img src="picture/127.png" alt="Kompakter Höhenverstellbarer Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kompakter Höhenverstellbarer Schreibtisch</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(24)</span>
+                        </div>
+                        <p class="product-price">€749</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-5" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-5">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="1099" data-material="wood" data-color="natural">
+                    <div class="product-image">
+                        <img src="picture/128.png" alt="L-förmiger Eck-Höhenverstellbarer Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">L-förmiger Eck-Höhenverstellbarer Schreibtisch</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(19)</span>
+                        </div>
+                        <p class="product-price">€1099</p>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=basic-6" class="btn-secondary">Details ansehen</a>
+                            <button class="add-to-cart" data-product-id="basic-6">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paginierung -->
+            <div class="pagination">
+                <button class="page-btn" data-page="prev">Vorherige</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn" data-page="next">Nächste</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verwandte Empfehlungen -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Verwandte Empfehlungen</h2>
+            <div class="related-slider">
+                <div class="related-card">
+                    <img src="picture/129.png" alt="Premium Höhenverstellbarer Schreibtisch">
+                    <h3>Premium Höhenverstellbare Schreibtische</h3>
+                    <p>Verbessern Sie Ihr Büroerlebnis</p>
+                    <a href="premium-products-de.html" class="btn-text">Details ansehen →</a>
+                </div>
+                <div class="related-card">
+                    <img src="picture/130.png" alt="Schreibtisch-Zubehör">
+                    <h3>Schreibtisch-Zubehör</h3>
+                    <p>Vervollständigen Sie Ihren Arbeitsplatz</p>
+                    <a href="accessories-de.html" class="btn-text">Details ansehen →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fußzeile -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shimo</h3>
+                    <p>Professionelle Marke für höhenverstellbare Schreibtische, die sich der Schaffung einer gesunden und komfortablen Arbeitsumgebung widmet</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produkte</h4>
+                    <ul>
+                        <li><a href="basic-products-de.html">Basis-Modell Höhenverstellbare Schreibtische</a></li>
+                        <li><a href="premium-products-de.html">Premium Höhenverstellbare Schreibtische</a></li>
+                        <li><a href="smart-products-de.html">Intelligente Höhenverstellbare Schreibtische</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="contact-de.html#support">Kundendienst</a></li>
+                        <li><a href="support-de.html#installation">Installationsanleitung</a></li>
+                        <li><a href="support-de.html#warranty">Garantierichtlinien</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontaktieren Sie uns</h4>
+                    <ul>
+                        <li>Telefon: +49-123-456789</li>
+                        <li>E-Mail: info@Shimo.de</li>
+                        <li>Adresse: Berlin, Deutschland</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shimo. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        // Basis-Modell Produktseite spezifische Skripte
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filterfunktion initialisieren
+            initProductFilters('basicProductsGrid');
+            
+            // Mehr Produkte laden (falls Paginierung vorhanden)
+            initPagination();
+        });
+    </script>
+</body>
+</html>

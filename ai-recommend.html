@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能推荐 - Shimo智能升降桌</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ai-recommend.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>中文</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="ai-recommend-en.html" class="lang-btn active">English</a>
+                <a href="ai-recommend-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI推荐头部 -->
+    <section class="ai-header">
+        <div class="container">
+            <h1>AI智能推荐系统</h1>
+            <p class="ai-description">
+                基于您的工作习惯、身高、办公环境和预算，我们的AI系统将为您推荐最适合的升降桌方案。
+                只需回答几个简单问题，即可获得个性化的专业建议。
+            </p>
+        </div>
+    </section>
+
+    <!-- AI推荐表单 -->
+    <section class="ai-recommend-section">
+        <div class="container">
+            <div class="ai-form-container">
+                <form id="aiRecommendForm" class="ai-form">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%"></div>
+                        </div>
+                        <div class="progress-steps">
+                            <div class="step active">1</div>
+                            <div class="step">2</div>
+                            <div class="step">3</div>
+                            <div class="step">4</div>
+                            <div class="step">5</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 第1步：基本信息 -->
+                    <div class="form-step active" data-step="1">
+                        <h2>基本信息</h2>
+                        <div class="form-group">
+                            <label for="height">您的身高（厘米）</label>
+                            <input type="number" id="height" name="height" min="140" max="220" required>
+                        </div>
+                        <div class="form-group">
+                            <label>您的工作类型</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="computer" required checked>
+                                    <span class="radio-text">电脑办公</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="design">
+                                    <span class="radio-text">设计/创意工作</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="gaming">
+                                    <span class="radio-text">游戏/娱乐</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="mixed">
+                                    <span class="radio-text">多用途</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-primary next-btn">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第2步：使用习惯 -->
+                    <div class="form-step" data-step="2">
+                        <h2>使用习惯</h2>
+                        <div class="form-group">
+                            <label>您平均每天坐着工作多长时间？</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="less4" required checked>
+                                    <span class="radio-text">少于4小时</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="4to6">
+                                    <span class="radio-text">4-6小时</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="6to8">
+                                    <span class="radio-text">6-8小时</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="more8">
+                                    <span class="radio-text">8小时以上</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>您是否有站立工作的习惯或意愿？</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="frequent" required checked>
+                                    <span class="radio-text">经常站立工作</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="sometimes">
+                                    <span class="radio-text">偶尔站立</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="rarely">
+                                    <span class="radio-text">很少站立</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="want">
+                                    <span class="radio-text">想养成习惯</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">上一步</button>
+                            <button type="button" class="btn-primary next-btn">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第3步：办公环境 -->
+                    <div class="form-step" data-step="3">
+                        <h2>办公环境</h2>
+                        <div class="form-group">
+                            <label for="deskSpace">您可用的桌面空间（厘米）</label>
+                            <div class="dimension-inputs">
+                                <div class="dimension-input">
+                                    <input type="number" id="deskWidth" name="deskWidth" placeholder="宽度" min="80" max="300" required>
+                                    <span>×</span>
+                                    <input type="number" id="deskDepth" name="deskDepth" placeholder="深度" min="50" max="200" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>您的办公环境是？</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="home" required checked>
+                                    <span class="radio-text">家庭办公</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="office">
+                                    <span class="radio-text">公司办公室</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="shared">
+                                    <span class="radio-text">共享工作空间</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="other">
+                                    <span class="radio-text">其他</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">上一步</button>
+                            <button type="button" class="btn-primary next-btn">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第4步：预算与需求 -->
+                    <div class="form-step" data-step="4">
+                        <h2>预算与需求</h2>
+                        <div class="form-group">
+                            <label>您的预算范围是？</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="under2000" required checked>
+                                    <span class="radio-text">2000元以下</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="2000to3000">
+                                    <span class="radio-text">2000-3000元</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="3000to5000">
+                                    <span class="radio-text">3000-5000元</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="above5000">
+                                    <span class="radio-text">5000元以上</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>您最看重升降桌的哪些特性？（可多选）</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="stability" checked>
+                                    <span class="checkbox-text">稳定性</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="noise">
+                                    <span class="checkbox-text">静音性</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="design">
+                                    <span class="checkbox-text">美观设计</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="smart">
+                                    <span class="checkbox-text">智能功能</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="storage">
+                                    <span class="checkbox-text">收纳空间</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="warranty">
+                                    <span class="checkbox-text">保修服务</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">上一步</button>
+                            <button type="button" class="btn-primary next-btn">下一步</button>
+                        </div>
+                    </div>
+                    
+                    <!-- 第5步：特殊需求 -->
+                    <div class="form-step" data-step="5">
+                        <h2>特殊需求</h2>
+                        <div class="form-group">
+                            <label>您是否需要以下特殊功能？（可多选）</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="monitor-arm">
+                                    <span class="checkbox-text">显示器支架</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="cable-management">
+                                    <span class="checkbox-text">线缆管理系统</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="usb-charging">
+                                    <span class="checkbox-text">USB充电口</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="drawer">
+                                    <span class="checkbox-text">抽屉/收纳</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="anti-collision">
+                                    <span class="checkbox-text">防碰撞系统</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">其他特殊需求或备注</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="请描述您的其他需求..."></textarea>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">上一步</button>
+                            <button type="submit" class="btn-primary">获取推荐</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI分析中 -->
+    <section class="ai-analyzing" style="display: none;">
+        <div class="container">
+            <div class="analyzing-content">
+                <div class="analyzing-animation">
+                    <div class="pulse"></div>
+                    <img src="images/ai-brain.svg" alt="AI分析" class="ai-icon">
+                </div>
+                <h2>AI正在分析您的需求...</h2>
+                <p>正在考虑多种因素，为您找到最佳升降桌方案</p>
+                <div class="analyzing-progress">
+                    <div class="analyzing-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐结果 -->
+    <section class="recommendation-results" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <h2>您的个性化推荐</h2>
+                <p>基于您提供的信息，我们为您精选了以下最适合的升降桌产品</p>
+            </div>
+            
+            <div class="recommendation-match">
+                <div class="match-percentage">98%</div>
+                <div class="match-text">
+                    <h3>匹配度</h3>
+                    <p>这款产品非常符合您的需求</p>
+                </div>
+            </div>
+            
+            <div class="top-recommendation">
+                <div class="product-image">
+                    <img id="recommendedProductImage" src="images/products/smart-desk-2.jpg" alt="推荐产品">
+                </div>
+                <div class="product-details">
+                    <h3 id="recommendedProductName">智能健康管家升降桌</h3>
+                    <p class="product-price" id="recommendedProductPrice">¥3,899</p>
+                    <div class="recommendation-reasons">
+                        <h4>为什么推荐这款产品</h4>
+                        <ul id="recommendationReasons">
+                            <li>适合您的身高范围，提供最佳人体工学体验</li>
+                            <li>符合您长时间工作的习惯，健康提醒功能帮助您养成站立工作习惯</li>
+                            <li>桌面尺寸适合您的工作空间</li>
+                            <li>在您的预算范围内提供最佳性价比</li>
+                            <li>具备您重视的稳定性和静音特性</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <a href="product-detail-en.html" id="viewDetailsLink" class="btn-secondary">View Details</a>
+                        <button class="btn-primary add-to-cart" id="recommendedAddToCart">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alternative-recommendations">
+                <h3>其他推荐</h3>
+                <div class="alt-products-grid">
+                    <!-- 替代推荐产品将通过JavaScript动态加载 -->
+                    <!-- 以下为示例 -->
+                    <div class="alt-product-card">
+                        <div class="alt-match">92%</div>
+                        <img src="images/products/smart-desk-1.jpg" alt="AI智能助手升降桌">
+                        <h4>AI智能助手升降桌</h4>
+                        <p class="alt-price">¥4,299</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                    
+                    <div class="alt-product-card">
+                        <div class="alt-match">85%</div>
+                        <img src="images/products/premium-desk-1.jpg" alt="商务精英款升降桌">
+                        <h4>商务精英款升降桌</h4>
+                        <p class="alt-price">¥3,499</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                    
+                    <div class="alt-product-card">
+                        <div class="alt-match">78%</div>
+                        <img src="images/products/basic-desk-3.jpg" alt="经典稳重款升降桌">
+                        <h4>经典稳重款升降桌</h4>
+                        <p class="alt-price">¥2,499</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommended-accessories">
+                <h3>推荐配件</h3>
+                <div class="accessories-grid">
+                    <!-- 推荐配件将通过JavaScript动态加载 -->
+                    <!-- 以下为示例 -->
+                    <div class="accessory-card">
+                        <img src="images/accessories/ergonomic-chair.jpg" alt="人体工学椅">
+                        <h4>人体工学椅</h4>
+                        <p class="accessory-description">完美配合您的升降桌，提供全天候舒适支撑</p>
+                        <p class="accessory-price">¥1,299</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a001">加入购物车</button>
+                    </div>
+                    
+                    <div class="accessory-card">
+                        <img src="images/accessories/monitor-arm.jpg" alt="显示器支架">
+                        <h4>显示器支架</h4>
+                        <p class="accessory-description">灵活调节显示器高度和角度，减轻颈部压力</p>
+                        <p class="accessory-price">¥399</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a002">加入购物车</button>
+                    </div>
+                    
+                    <div class="accessory-card">
+                        <img src="images/accessories/cable-management.jpg" alt="线缆管理套装">
+                        <h4>线缆管理套装</h4>
+                        <p class="accessory-description">保持桌面整洁，避免线缆缠绕和损坏</p>
+                        <p class="accessory-price">¥199</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a003">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="save-results">
+                <button class="btn-primary" id="saveRecommendation">保存推荐结果</button>
+                <button class="btn-secondary" id="startNewRecommendation">重新进行推荐</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户反馈 -->
+    <section class="ai-feedback">
+        <div class="container">
+            <h2>用户对AI推荐的评价</h2>
+            <div class="feedback-stats">
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">用户对推荐结果满意</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24,568</div>
+                    <div class="stat-label">已完成的推荐</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">最终购买了推荐产品</div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="quote">"AI推荐系统太神奇了！它推荐的升降桌完美符合我的需求，尤其是考虑到了我的身高和工作习惯。"</div>
+                    <div class="testimonial-author">
+                        <img src="images/avatars/user5.jpg" alt="用户头像">
+                        <div>
+                            <div class="author-name">刘先生</div>
+                            <div class="author-info">自由职业者</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">"本来对这种AI推荐持怀疑态度，但结果出乎意料地准确。推荐的升降桌不仅符合我的预算，还具备我最看重的所有功能。"</div>
+                    <div class="testimonial-author">
+                        <img src="images/avatars/user6.jpg" alt="用户头像">
+                        <div>
+                            <div class="author-name">赵女士</div>
+                            <div class="author-info">设计师</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">"节省了我大量比较不同型号的时间。AI系统考虑了我没想到的因素，比如桌面材质与我的工作类型的匹配度。"</div>
+                    <div class="testimonial-author">
+                        <img src="images/avatars/user7.jpg" alt="用户头像">
+                        <div>
+                            <div class="author-name">王先生</div>
+                            <div class="author-info">IT工程师</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-recommend.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化AI推荐表单
+            initAiRecommendForm();
+        });
+    </script>
+</body>
+</html>

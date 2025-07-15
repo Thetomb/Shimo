@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shimo Smart Standing Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="product-detail-en.html" class="lang-btn active">English</a>
+                <a href="product-detail-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Header -->
+    <section class="product-detail-header">
+        <div class="container">
+            <div class="header-navigation">
+                <!-- Back Button -->
+                <button class="back-button" onclick="goBack()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back
+                </button>
+                
+                <!-- Breadcrumb Navigation -->
+                <div class="breadcrumb">
+                    <a href="index-en.html">Home</a> > 
+                    <a href="products-en.html">Products</a> > 
+                    <span id="product-category-breadcrumb">Smart Series</span> > 
+                    <span id="product-name-breadcrumb">Product Name</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Main Content -->
+    <main class="product-detail-container">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="images/placeholder.jpg" alt="Product Main Image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active"><img src="images/placeholder-thumb.jpg" alt="Product Thumbnail 1"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Product Thumbnail 2"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Product Thumbnail 3"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Product Thumbnail 4"></div>
+                    </div>
+                </div>
+                
+                <!-- Product Information -->
+                <div class="product-info">
+                    <h1 id="product-title">Smart Standing Desk Pro Max</h1>
+                    <div class="product-meta">
+                        <span class="product-sku">Product Code: <span id="product-sku">DR-SM-2023</span></span>
+                        <span class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(128 Reviews)</span>
+                        </span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price" id="product-price">$599</span>
+                        <span class="original-price">$699</span>
+                        <span class="discount-tag">Save $100</span>
+                    </div>
+                    
+                    <div class="product-colors">
+                        <h3>Color Selection</h3>
+                        <div class="color-options">
+                            <div class="color-option active" data-color="black">
+                                <div class="color-swatch" style="background-color: #333;"></div>
+                                <span>Classic Black</span>
+                            </div>
+                            <div class="color-option" data-color="white">
+                                <div class="color-swatch" style="background-color: #f5f5f5;"></div>
+                                <span>Pure White</span>
+                            </div>
+                            <div class="color-option" data-color="wood">
+                                <div class="color-swatch" style="background-color: #d2b48c;"></div>
+                                <span>Natural Wood</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-sizes">
+                        <h3>Size Selection</h3>
+                        <div class="size-options">
+                            <div class="size-option" data-size="120x60">120×60cm</div>
+                            <div class="size-option active" data-size="140x70">140×70cm</div>
+                            <div class="size-option" data-size="160x80">160×80cm</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn-outline buy-now">Buy Now</button>
+                    </div>
+                    
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <a href="#" class="share-icon facebook">Facebook</a>
+                        <a href="#" class="share-icon twitter">Twitter</a>
+                        <a href="#" class="share-icon linkedin">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Detail Tabs -->
+            <div class="product-tabs">
+                <ul class="tab-nav">
+                    <li class="active" data-tab="description">Product Details</li>
+                    <li data-tab="specs">Specifications</li>
+                    <li data-tab="reviews">Customer Reviews</li>
+                    <li data-tab="qna">FAQ</li>
+                </ul>
+                
+                <div class="tab-content">
+                    <!-- Product Description -->
+                    <div class="tab-pane active" id="description">
+                        <h2>Product Description</h2>
+                        <div id="product-description">
+                            <p>The Shimo Smart Standing Desk Pro Max is our flagship product, combining the latest ergonomic design with smart technology. It features a high-strength aerospace aluminum frame and premium solid wood desktop, supporting electric height adjustment and intelligent memory functions.</p>
+                            <p>Product Features:</p>
+                            <ul>
+                                <li>Smart Height Memory: Store 4 commonly used height settings, one-touch switching</li>
+                                <li>Ultra-quiet Motor: Lifting noise below 40 decibels</li>
+                                <li>Anti-collision Protection: Automatically stops when encountering obstacles</li>
+                                <li>USB Charging Ports: Desktop integrated with 3 USB fast charging ports</li>
+                                <li>Wireless Charging Zone: Supports Qi standard wireless charging</li>
+                            </ul>
+                            <img src="images/product-detail-1.jpg" alt="Product Detail Image">
+                        </div>
+                    </div>
+                    
+                    <!-- Specifications -->
+                    <div class="tab-pane" id="specs">
+                        <h2>Specifications</h2>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Product Name</th>
+                                <td id="spec-name">Shimo Smart Standing Desk Pro Max</td>
+                            </tr>
+                            <tr>
+                                <th>Product Model</th>
+                                <td id="spec-model">DR-SM-2023</td>
+                            </tr>
+                            <tr>
+                                <th>Desktop Material</th>
+                                <td id="spec-material">FSC Certified Solid Wood</td>
+                            </tr>
+                            <tr>
+                                <th>Frame Material</th>
+                                <td id="spec-frame">Aerospace Grade Aluminum Alloy</td>
+                            </tr>
+                            <tr>
+                                <th>Height Range</th>
+                                <td id="spec-height">60-125cm</td>
+                            </tr>
+                            <tr>
+                                <th>Weight Capacity</th>
+                                <td id="spec-weight">120kg</td>
+                            </tr>
+                            <tr>
+                                <th>Motor Type</th>
+                                <td id="spec-motor">Dual Motor Drive</td>
+                            </tr>
+                            <tr>
+                                <th>Control Method</th>
+                                <td id="spec-control">Touch Panel/Mobile APP/Voice Control</td>
+                            </tr>
+                            <tr>
+                                <th>Power Requirements</th>
+                                <td id="spec-power">220V 50Hz</td>
+                            </tr>
+                            <tr>
+                                <th>Product Weight</th>
+                                <td id="spec-netweight">45kg</td>
+                            </tr>
+                            <tr>
+                                <th>Package Dimensions</th>
+                                <td id="spec-package">165×85×15cm</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Customer Reviews -->
+                    <div class="tab-pane" id="reviews">
+                        <h2>Customer Reviews <span class="review-count">(128)</span></h2>
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <div class="rating-score">4.8</div>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-text">128 Reviews</div>
+                            </div>
+                            <div class="rating-distribution">
+                                <div class="rating-bar">
+                                    <span class="rating-label">5 Stars</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                    <span class="rating-percent">85%</span>
+                                </div>
+                                <!-- Other star rating distribution -->
+                            </div>
+                        </div>
+                        
+                        <div class="review-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="review-user">Mr. Z**</span>
+                                    <span class="review-date">2023-05-15</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <div class="review-content">
+                                    <h4 class="review-title">Very Satisfied Shopping Experience</h4>
+                                    <p class="review-text">The desk quality is excellent, height adjustment is very smooth, and noise is minimal. The installation technician was professional with great service attitude. The smart memory function is particularly useful, allowing one-touch switching between standing and sitting work modes daily.</p>
+                                </div>
+                            </div>
+                            <!-- More reviews -->
+                        </div>
+                        
+                        <div class="review-pagination">
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn next">Next ></button>
+                        </div>
+                        
+                        <div class="write-review">
+                            <h3>Write Your Review</h3>
+                            <form class="review-form">
+                                <div class="form-group">
+                                    <label>Rating</label>
+                                    <div class="rating-input">
+                                        <span class="star" data-value="1">☆</span>
+                                        <span class="star" data-value="2">☆</span>
+                                        <span class="star" data-value="3">☆</span>
+                                        <span class="star" data-value="4">☆</span>
+                                        <span class="star" data-value="5">☆</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Review Title</label>
+                                    <input type="text" id="review-title" placeholder="Briefly describe your experience">
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-text">Detailed Review</label>
+                                    <textarea id="review-text" rows="5" placeholder="Share your experience..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ -->
+                    <div class="tab-pane" id="qna">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Is the installation of this standing desk complicated?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Our product design considers installation convenience, and most customers report that they can complete the installation within 30-60 minutes. We also provide professional installation service (additional fee required), which you can select when placing your order.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Is there much noise during height adjustment?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>The Pro Max model uses ultra-quiet motor technology with lifting noise below 40 decibels, equivalent to library environment noise level, which will not interfere with your work or rest.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>What is the height adjustment range?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>The height adjustment range is 60-125cm, which can meet the needs of users of different heights.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>What is the weight capacity?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Maximum weight capacity is 120kg, which can accommodate multiple monitors, computer hosts and other equipment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ask-question">
+                            <h3>Question Not Resolved?</h3>
+                            <form class="question-form">
+                                <div class="form-group">
+                                    <label for="question-text">Your Question</label>
+                                    <textarea id="question-text" rows="3" placeholder="Please describe your question in detail..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question-contact">Contact Information</label>
+                                    <input type="text" id="question-contact" placeholder="Email/Phone (Optional)">
+                                </div>
+                                <button type="submit" class="btn-primary">Submit Question</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-products-grid">
+                    <div class="related-product">
+                        <a href="product-detail.html?id=102">
+                            <img src="images/related-1.jpg" alt="Related Product 1">
+                            <h3>Smart Standing Desk Lite</h3>
+                            <p class="price">$399</p>
+                        </a>
+                    </div>
+                    <!-- More related products -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Product Detail Page Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

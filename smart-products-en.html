@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Standing Desks - Shimo Smart Standing Desks</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/smart-products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigationscontainer -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachumschalter -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="smart-products-en.html" class="lang-btn active">English</a>
+                <a href="smart-products-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produktseiten-Header -->
+    <section class="page-header smart-header">
+        <div class="container">
+            <h1>Smart Stehschreibtische</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <a href="products-en.html">Products</a> > <span>Smart</span>
+            </div>
+            <p class="category-description">
+                Shimo Smart Stehschreibtische vereinen modernste Technologie mit ergonomischem Design. 
+                Durch intelligente App-Steuerung, Gesundheitserinnerungen und automatische Anpassungsfunktionen 
+                bieten sie ein völlig neues intelligentes Büroerlebnis. Machen Sie Ihren Arbeitsplatz intelligenter, 
+                komfortabler und effizienter.
+            </p>
+        </div>
+    </section>
+
+    <!-- Produktkategorie-Navigation -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-en.html" class="category-tab">All</a>
+                <a href="basic-products-en.html" class="category-tab">Basic</a>
+                <a href="premium-products-en.html" class="category-tab">Premium</a>
+                <a href="smart-products-en.html" class="category-tab active">Smart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktfilter -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="3000-4000">£450-£600</option>
+                <option value="4000-5000">£600-£750</option>
+                <option value="5000+">£750 and above</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Smart Features</label>
+                    <select id="smartFeatureFilter">
+                        <option value="all">All Features</option>
+                        <option value="app-control">App Control</option>
+                        <option value="voice-control">Voice Control</option>
+                        <option value="auto-adjust">Auto Adjustment</option>
+                        <option value="health-reminder">Health Reminder</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Connectivity</label>
+                    <select id="connectivityFilter">
+                        <option value="all">All Connections</option>
+                        <option value="wifi">Wi-Fi</option>
+                        <option value="bluetooth">Bluetooth</option>
+                        <option value="zigbee">Zigbee</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart-Funktionen Highlights -->
+    <section class="smart-features">
+        <div class="container">
+            <h2 class="section-title">Smart Features Overview</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+
+                    <h3>Intelligent App Control</h3>
+                    <p>Control desk height remotely via smartphone app and adjust your working position anytime, anywhere</p>
+                </div>
+                
+                <div class="feature-card">
+
+                    <h3>Health Standing Reminder</h3>
+                    <p>Intelligent algorithms analyze your sitting time and remind you to stand and work in time to prevent health issues</p>
+                </div>
+                
+                <div class="feature-card">
+
+                    <h3>Smart Schedule</h3>
+                    <p>Automatically adjusts the ratio of standing and sitting work time based on your work habits</p>
+                </div>
+                
+                <div class="feature-card">
+
+                    <h3>Sprachsteuerung</h3>
+                    <p>Unterstützt gängige intelligente Sprachassistenten, befreit Ihre Hände und steuert die Tischhöhe per Sprache</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktliste -->
+    <section class="products-grid">
+        <div class="container">
+            <h2 class="section-title">Smart Products</h2>
+            <div class="products-container" id="smartProductsGrid">
+                <!-- Smart-Produkte werden dynamisch über JavaScript geladen -->
+                <!-- Statische Beispiele unten -->
+                <div class="product-card">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="picture/554.png">
+                    </div>
+                    <div class="product-info">
+                        <h3>AI Smart Assistant Standing Desk</h3>
+                        <p class="product-price">£639</p>
+                        <div class="product-features">
+                            <span>AI Learning Algorithm</span>
+                            <span>App Control</span>
+                            <span>Voice Recognition</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=s001" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s001">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="picture/555.png" alt="Intelligenter Gesundheitsmanager Stehschreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Intelligenter Gesundheitsmanager Stehschreibtisch</h3>
+                        <p class="product-price">585€</p>
+                        <div class="product-features">
+                            <span>Gesundheitsdatenanalyse</span>
+                            <span>Steh-Erinnerung</span>
+                            <span>Automatische Anpassung</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=s002" class="btn-secondary">Details ansehen</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s002">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/556.png">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Home Connected Standing Desk</h3>
+                        <p class="product-price">£679</p>
+                        <div class="product-features">
+                            <span>Smart Home Integration</span>
+                            <span>Scene Linking</span>
+                            <span>Multi-Platform Compatibility</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=s003" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s003">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Flagship</div>
+                    <div class="product-image">
+                        <img src="picture/557.png">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Office Flagship Standing Desk</h3>
+                        <p class="product-price">£799</p>
+                        <div class="product-features">
+                            <span>Touch Display</span>
+                            <span>Wireless Charging</span>
+                            <span>Full Smart Control</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=s004" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s004">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/558.png" alt="Smart Gaming Stehschreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Gaming Stehschreibtisch</h3>
+                        <p class="product-price">720€</p>
+                        <div class="product-features">
+                            <span>RGB-Beleuchtung</span>
+                            <span>Gaming-Synchronisation</span>
+                            <span>Intelligente Kühlung</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=s005" class="btn-secondary">Details ansehen</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s005">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/559.png">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Conference Standing Desk</h3>
+                        <p class="product-price">£959</p>
+                        <div class="product-features">
+                            <span>Video Conference Integration</span>
+                            <span>Multi-User Control</span>
+                            <span>Smart Light Adjustment</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=s006" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="s006">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginierung -->
+            <div class="pagination">
+                <button class="page-btn" data-page="prev">Vorherige</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn" data-page="next">Nächste</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-Container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        // Initialisierung der Smart-Produktseiten-spezifischen Funktionen
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smart-Produktdaten laden
+            loadSmartProducts();
+            
+            // Filter initialisieren
+            initSmartFilters();
+            
+            // Event für "Mehr Bewertungen laden" Button
+            document.getElementById('loadMoreReviews').addEventListener('click', function() {
+                loadMoreReviews('smart');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimo Smart Standing Desk - Redefine Your Workspace</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Shimo Smart Standing Desk with AI personalized recommendations for a new healthy office experience. Try our intelligent recommendation system to find the perfect standing desk.">
+</head>
+<body>
+    <main class="main-container">
+        <!-- 智能助手聊天窗口 -->
+        <div class="chat-widget-center">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <span class="avatar-icon">🤖</span>
+                </div>
+                <div class="chat-info">
+                    <h3 class="chat-title">Shimo AI Assistant</h3>
+                    <p class="chat-subtitle">Find Your Perfect Standing Desk</p>
+                </div>
+                <!-- 语言下拉菜单 -->
+                <div class="language-dropdown">
+                    <div class="dropdown-toggle" id="languageToggle">
+                        <span>English</span>
+                    </div>
+                    <div class="dropdown-menu" id="languageMenu">
+                        <a href="landing-en.html" class="lang-btn active" data-lang="en">English</a>
+                        <a href="landing-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Welcome to Shimo! I'm your personal AI assistant.</p>
+                        <p>Tell me about your work habits, and I'll recommend the perfect standing desk for you.</p>
+                    </div>
+                </div>
+                <div class="typing-indicator">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <div class="typing-dots">
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="quick-options">
+                    <button class="quick-btn" data-option="office">Office Use</button>
+                    <button class="quick-btn" data-option="home">Home Office</button>
+                    <button class="quick-btn" data-option="gaming">Gaming & Entertainment</button>
+                </div>
+                <div class="chat-input-wrapper">
+                    <input type="text" class="chat-input" placeholder="Enter your needs or questions..." />
+                    <button class="send-btn">
+                        <span class="send-icon">→</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chat-actions">
+                <a href="products-en.html" class="action-btn primary">Browse All Products</a>
+                <a href="ai-recommend-en.html" class="action-btn secondary">AI Smart Recommendation</a>
+            </div>
+        </div>
+        
+        <!-- 推荐产品部分 -->
+        <div class="recommendations-section">
+            <h2 class="section-title">AI Recommended Products</h2>
+            <p class="section-subtitle">Carefully selected standing desks based on your usage scenarios</p>
+            
+            <div class="product-recommendations">
+                <!-- 推荐产品1 -->
+                <div class="recommendation-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6616e92-311b-41d6-bac9-3cbafdba905c.png" alt="配有竹制桌面、双电机系统和记忆功能的现代电动升降桌，置于明亮的办公环境中" />
+                        <div class="card-badge">Best Seller</div>
+                        <div class="match-indicator">
+                            <span>★</span>
+                            <span>98% Match</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-model">S-DESK PRO Smart Edition</div>
+                        <h4 class="card-title">Smart Memory Standing Desk (140cm Bamboo Desktop)</h4>
+                        <div class="card-features">
+                            <span class="feature-tag">Dual Motor</span>
+                            <span class="feature-tag">4 Memory Presets</span>
+                            <span class="feature-tag">Anti-Collision</span>
+                            <span class="feature-tag">Silent Operation</span>
+                        </div>
+                        <div class="card-price-section">
+                            <div>
+                                <span class="card-price">£319</span>
+                                <span class="original-price">£367</span>
+                            </div>
+                            <div class="discount">Limited Time 10% Off</div>
+                        </div>
+                        <p class="card-desc">Features imported dual-motor system with 38mm/s adjustment speed, 4 height memory presets for quick sit-stand transitions. Eco-friendly bamboo desktop with 80kg weight capacity.</p>
+                        <div class="card-actions">
+                            <button class="card-btn btn-primary" onclick="window.location.href='product-detail-en.html?id=s-desk-pro'">Buy Now</button>
+                            <button class="card-btn btn-secondary" onclick="window.location.href='products-en.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推荐产品2 -->
+                <div class="recommendation-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b88ee31-1845-406d-bbc8-9b685a9f591f.png" alt="配有深色胡桃木饰面、无线充电器和LED环境照明的高端商务升降桌，置于现代办公室中" />
+                        <div class="card-rating">
+                            <span>★</span>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-model">S-DESK EXECUTIVE</div>
+                        <h4 class="card-title">Elite Business Standing Desk (160cm Walnut)</h4>
+                        <div class="card-features">
+                            <span class="feature-tag">Wireless Charging</span>
+                            <span class="feature-tag">LED Lighting</span>
+                            <span class="feature-tag">Solid Wood Desktop</span>
+                            <span class="feature-tag">APP Control</span>
+                        </div>
+                        <div class="card-price-section">
+                            <div>
+                                <span class="card-price">£511</span>
+                            </div>
+                        </div>
+                        <p class="card-desc">Business-grade standing desk with genuine walnut desktop and integrated wireless charging area. Features smart APP control and RGB ambient lighting for premium office experience.</p>
+                        <div class="card-actions">
+                            <button class="card-btn btn-primary" onclick="window.location.href='product-detail-en.html?id=s-desk-executive'">Buy Now</button>
+                            <button class="card-btn btn-secondary" onclick="window.location.href='premium-products-en.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推荐产品3 -->
+                <div class="recommendation-card">
+                    <div class="card-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9d15d8c-340c-4646-9794-a2e25a0d0fbf.png" alt="配有白色饰面、线缆管理系统和人体工学设计的紧凑型家庭办公升降桌，置于舒适的家庭工作空间中" />
+                        <div class="card-badge">Best Value</div>
+                        <div class="match-indicator">
+                            <span>★</span>
+                            <span>95% Match</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-model">S-DESK HOME</div>
+                        <h4 class="card-title">Home Office Standing Desk (120cm Minimalist White)</h4>
+                        <div class="card-features">
+                            <span class="feature-tag">Single Motor</span>
+                            <span class="feature-tag">Cable Management</span>
+                            <span class="feature-tag">Minimalist Design</span>
+                            <span class="feature-tag">Easy Installation</span>
+                        </div>
+                        <div class="card-price-section">
+                            <div>
+                                <span class="card-price">£159</span>
+                                <span class="original-price">£191</span>
+                            </div>
+                            <div class="discount">New Product Special Price</div>
+                        </div>
+                        <p class="card-desc">Designed specifically for home office, 120cm width perfect for small spaces. Minimalist white finish matches any decor style. Integrated cable management system keeps workspace tidy.</p>
+                        <div class="card-actions">
+                            <button class="card-btn btn-primary" onclick="window.location.href='product-detail-en.html?id=s-desk-home'">Buy Now</button>
+                            <button class="card-btn btn-secondary" onclick="window.location.href='basic-products-en.html'">Compare Products</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI聊天API脚本 -->
+    <script src="JS/landing-chat.js"></script>
+</body>
+</html>

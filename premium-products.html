@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Standing Desks - Shimo Smart Standing Desks</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/premium-products.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="premium-products-en.html" class="lang-btn active">English</a>
+                <a href="premium-products-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品页面头部 -->
+    <section class="page-header premium-header">
+        <div class="container">
+            <h1>Premium Standing Desks</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <a href="products-en.html">Products</a> > <span>Premium</span>
+            </div>
+            <p class="category-description">
+                Shimo premium standing desks use high-quality materials and exquisite craftsmanship to provide a luxurious office experience for users who pursue excellence.
+                Each product undergoes strict quality control and performance testing to ensure stability and durability.
+            </p>
+        </div>
+    </section>
+
+    <!-- 产品分类导航 -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-en.html" class="category-tab">All</a>
+                <a href="basic-products-en.html" class="category-tab">Basic Series</a>
+                <a href="premium-products-en.html" class="category-tab active">Premium Series</a>
+                <a href="smart-products-en.html" class="category-tab">Smart Series</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品筛选器 -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="2000-3000">$2000-3000</option>
+                        <option value="3000-4000">$3000-4000</option>
+                        <option value="4000+">$4000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Desktop Material</label>
+                    <select id="materialFilter">
+                        <option value="all">All Materials</option>
+                        <option value="solid-wood">Premium Solid Wood</option>
+                        <option value="marble">Marble</option>
+                        <option value="tempered-glass">Tempered Glass</option>
+                        <option value="carbon-fiber">Carbon Fiber</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Special Features</label>
+                    <select id="featureFilter">
+                        <option value="all">All Features</option>
+                        <option value="memory">Memory Positions</option>
+                        <option value="anti-collision">Anti-collision Protection</option>
+                        <option value="cable-management">Cable Management System</option>
+                        <option value="usb">USB Charging Port</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品列表 -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-container" id="premiumProductsGrid">
+                <!-- 高端款产品将通过JavaScript动态加载 -->
+                <!-- 以下是静态示例 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-1.jpg" alt="Business Elite Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Business Elite Standing Desk</h3>
+                        <p class="product-price">$3,499</p>
+                        <div class="product-features">
+                            <span>Premium Solid Wood Desktop</span>
+                            <span>Dual Motor Drive</span>
+                            <span>4 Memory Positions</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p001" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p001">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p001">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-2.jpg" alt="Executive Office Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Executive Office Standing Desk</h3>
+                        <p class="product-price">$4,299</p>
+                        <div class="product-features">
+                            <span>Marble Desktop</span>
+                            <span>Silent Motor</span>
+                            <span>Built-in USB Charging</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p002" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p002">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p002">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-3.jpg" alt="Designer Professional Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Professional Standing Desk</h3>
+                        <p class="product-price">$3,899</p>
+                        <div class="product-features">
+                            <span>Extra Large Desktop</span>
+                            <span>Anti-collision Protection</span>
+                            <span>Cable Management System</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p003" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p003">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p003">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-4.jpg" alt="Luxury Conference Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Conference Standing Desk</h3>
+                        <p class="product-price">$5,499</p>
+                        <div class="product-features">
+                            <span>Carbon Fiber Desktop</span>
+                            <span>Extra Heavy Duty</span>
+                            <span>Built-in Wireless Charging</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p004" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p004">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p004">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Limited</div>
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-5.jpg" alt="Artist Custom Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Artist Custom Standing Desk</h3>
+                        <p class="product-price">$4,899</p>
+                        <div class="product-features">
+                            <span>Artistic Coating</span>
+                            <span>LED Ambient Lighting</span>
+                            <span>Detachable Accessories</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p005" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p005">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p005">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/premium-desk-6.jpg" alt="Premium L-Shape Corner Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium L-Shape Corner Standing Desk</h3>
+                        <p class="product-price">$5,999</p>
+                        <div class="product-features">
+                            <span>L-Shape Design</span>
+                            <span>Triple Motor Drive</span>
+                            <span>Smart Temperature Control</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=p006" class="btn-secondary">View Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p006">Add to Cart</button>
+                            <button class="buy-now" data-product-id="p006">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <button class="page-btn" data-page="prev">Previous</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn" data-page="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐搭配 -->
+    <section class="recommended-combos">
+        <div class="container">
+            <h2 class="section-title">Recommended Accessories</h2>
+            <p class="section-subtitle">These accessories perfectly complement your premium standing desk</p>
+            
+            <div class="combo-slider">
+                <div class="combo-item">
+                    <img src="images/accessories/ergonomic-chair.jpg" alt="Ergonomic Chair">
+                    <h4>Premium Ergonomic Chair</h4>
+                    <p class="combo-price">$2,499</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a001">Add to Cart</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="images/accessories/monitor-arm.jpg" alt="Monitor Arm">
+                    <h4>Aluminum Monitor Arm</h4>
+                    <p class="combo-price">$699</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a002">Add to Cart</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="images/accessories/cable-management.jpg" alt="Cable Management Kit">
+                    <h4>Premium Cable Management Kit</h4>
+                    <p class="combo-price">$299</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a003">Add to Cart</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="images/accessories/desk-mat.jpg" alt="Desk Pad">
+                    <h4>Leather Desk Protection Pad</h4>
+                    <p class="combo-price">$399</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a004">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/avatars/user1.jpg" alt="User Avatar" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Mr. Zhang</h4>
+                                <div class="rating">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">2024-03-15</span>
+                    </div>
+                    <p class="review-text">
+                        I've been using the Business Elite Standing Desk for a month now, and the quality is excellent. The desktop material is premium, and the height adjustment is smooth and silent. The memory position feature is particularly useful - I can adjust to my preferred height with just one button. Customer service was also very professional, providing immediate answers when I encountered issues during installation. Highly recommended!
+                    </p>
+                    <div class="review-product">Purchased Product: Business Elite Standing Desk</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/avatars/user2.jpg" alt="User Avatar" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Ms. Li</h4>
+                                <div class="rating">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">2024-02-28</span>
+                    </div>
+                    <p class="review-text">
+                        The marble desktop of the Executive Office Standing Desk is really beautiful with excellent texture. The built-in USB charging port design is very thoughtful, saving me from using an extra charger. The only minor drawback is that the desktop is a bit heavy, requiring two people for transportation. Overall, I'm very satisfied with this purchase.
+                    </p>
+                    <div class="review-product">Purchased Product: Executive Office Standing Desk</div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn-text" id="loadMoreReviews">View More Reviews ↓</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/premium-products.js"></script>
+    <script>
+        // 初始化高端款产品页面特定的功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 加载高端款产品数据
+            loadPremiumProducts();
+            
+            // 初始化筛选器
+            initPremiumFilters();
+            
+            // 初始化推荐搭配滑块
+            initComboSlider();
+            
+            // 加载更多评价按钮事件
+            document.getElementById('loadMoreReviews').addEventListener('click', function() {
+                loadMoreReviews('premium');
+            });
+        });
+    </script>
+</body>
+</html>

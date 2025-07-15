@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Produkte - Shimo Smart Stehschreibtische</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Entdecken Sie alle Shimo Smart Stehschreibtische - von Basic bis Premium und Smart-Modellen. Höhenverstellbare Schreibtische für ergonomisches Arbeiten.">
+    <meta name="keywords" content="Stehschreibtisch, höhenverstellbar, ergonomisch, Büromöbel, smart desk, alle Produkte">
+</head>
+<body>
+    <!-- Navigationsleiste Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachauswahl -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="products-en.html" class="lang-btn" data-lang="en">English</a>
+                <a href="products-de.html" class="lang-btn active" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produktseiten-Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Alle Produkte</h1>
+            <div class="breadcrumb">
+                <a href="index-de.html">Startseite</a> > <span>Produkte</span>
+            </div>
+            <p class="page-description">Entdecken Sie unsere komplette Kollektion hochwertiger, höhenverstellbarer Stehschreibtische für jeden Bedarf und jedes Budget.</p>
+        </div>
+    </section>
+
+    <!-- Produktkategorie-Navigation -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-de.html" class="category-tab active" data-category="all">
+                    <span class="tab-text">Alle</span>
+                </a>
+                <a href="basic-products-de.html" class="category-tab" data-category="basic">
+                    <span class="tab-text">Basic</span>
+                </a>
+                <a href="premium-products-de.html" class="category-tab" data-category="premium">
+                    <span class="tab-text">Premium</span>
+                </a>
+                <a href="smart-products-de.html" class="category-tab" data-category="smart">
+                    <span class="tab-text">Smart</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktfilter -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-header">
+                <h3>Filter & Sortierung</h3>
+                <button id="clearFilters" class="btn-outline">Filter zurücksetzen</button>
+            </div>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="priceFilter">Preisbereich</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">Alle Preise</option>
+                        <option value="0-130">0€ - 130€</option>
+                        <option value="130-260">130€ - 260€</option>
+                        <option value="260-390">260€ - 390€</option>
+                        <option value="390-520">390€ - 520€</option>
+                        <option value="520+">520€ und mehr</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="materialFilter">Tischplattenmaterial</label>
+                    <select id="materialFilter" class="filter-select">
+                        <option value="all">Alle Materialien</option>
+                        <option value="wood">Massivholz</option>
+                        <option value="bamboo">Bambus</option>
+                        <option value="glass">Sicherheitsglas</option>
+                        <option value="metal">Metall</option>
+                        <option value="laminate">Laminat</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="colorFilter">Farbe</label>
+                    <select id="colorFilter" class="filter-select">
+                        <option value="all">Alle Farben</option>
+                        <option value="natural">Naturholz</option>
+                        <option value="white">Reinweiß</option>
+                        <option value="black">Klassisches Schwarz</option>
+                        <option value="gray">Modernes Grau</option>
+                        <option value="walnut">Nussbaum</option>
+                        <option value="oak">Eiche</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sizeFilter">Größe</label>
+                    <select id="sizeFilter" class="filter-select">
+                        <option value="all">Alle Größen</option>
+                        <option value="120x60">120×60cm (Kompakt)</option>
+                        <option value="140x70">140×70cm (Standard)</option>
+                        <option value="160x80">160×80cm (Groß)</option>
+                        <option value="180x80">180×80cm (Extra Groß)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Sortieren nach</label>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="default">Empfohlen</option>
+                        <option value="price-low">Preis: Niedrig zu Hoch</option>
+                        <option value="price-high">Preis: Hoch zu Niedrig</option>
+                        <option value="name-az">Name: A-Z</option>
+                        <option value="name-za">Name: Z-A</option>
+                        <option value="newest">Neueste zuerst</option>
+                        <option value="rating">Beste Bewertung</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Filter anwenden</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktraster -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-header">
+                <div class="results-info">
+                    <span id="resultsCount">12 Produkte gefunden</span>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid" title="Rasteransicht">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"/>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="list" title="Listenansicht">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="products-container" id="productsGrid">
+                <!-- Produkte werden dynamisch über JavaScript geladen -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Produkte werden geladen...</p>
+                </div>
+            </div>
+            
+            <!-- Keine Ergebnisse Nachricht -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>Keine Produkte gefunden</h3>
+                <p>Versuchen Sie, Ihre Filter anzupassen oder alle Filter zurückzusetzen.</p>
+                <button class="btn-primary" onclick="clearAllFilters()">Alle Filter zurücksetzen</button>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn prev" data-page="prev" disabled>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    Zurück
+                </button>
+                <div class="page-numbers" id="pageNumbers">
+                    <span class="page-number active" data-page="1">1</span>
+                    <span class="page-number" data-page="2">2</span>
+                    <span class="page-number" data-page="3">3</span>
+                </div>
+                <button class="page-btn next" data-page="next">
+                    Weiter
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produktvergleich Sidebar -->
+    <div class="compare-sidebar" id="compareSidebar">
+        <div class="compare-header">
+            <h3>Produktvergleich</h3>
+            <button class="close-compare" onclick="closeCompare()">×</button>
+        </div>
+        <div class="compare-products" id="compareProducts">
+            <!-- Vergleichsprodukte werden hier hinzugefügt -->
+        </div>
+        <div class="compare-actions">
+            <button class="btn-primary" onclick="goToCompare()" disabled id="compareBtn">
+                Vergleichen (<span id="compareCount">0</span>)
+            </button>
+            <button class="btn-outline" onclick="clearCompare()">Alle entfernen</button>
+        </div>
+    </div>
+
+    <!-- Schnellansicht Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-overlay" onclick="closeQuickView()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuickView()">×</button>
+            <div class="quick-view-content" id="quickViewContent">
+                <!-- Schnellansicht-Inhalt wird hier geladen -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hilfe-Tooltip -->
+    <div class="help-tooltip" id="helpTooltip">
+        <div class="tooltip-content">
+            <h4>Brauchen Sie Hilfe?</h4>
+            <p>Unsere Produktexperten helfen Ihnen gerne bei der Auswahl des perfekten Stehschreibtisches.</p>
+            <div class="tooltip-actions">
+                <a href="contact-de.html" class="btn-primary">Kontakt aufnehmen</a>
+                <a href="tel:+49-800-123-4567" class="btn-outline">Anrufen</a>
+            </div>
+        </div>
+        <button class="tooltip-close" onclick="closeHelpTooltip()">×</button>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-actions">
+        <button class="fab help-fab" onclick="showHelpTooltip()" title="Hilfe benötigt?">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+        </button>
+        <button class="fab filter-fab" onclick="toggleMobileFilters()" title="Filter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46"></polygon>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Filter Overlay -->
+    <div class="mobile-filter-overlay" id="mobileFilterOverlay">
+        <div class="mobile-filter-content">
+            <div class="mobile-filter-header">
+                <h3>Filter & Sortierung</h3>
+                <button class="close-mobile-filter" onclick="closeMobileFilters()">×</button>
+            </div>
+            <div class="mobile-filter-body">
+                <!-- Mobile Filter-Inhalt wird hier dupliziert -->
+            </div>
+            <div class="mobile-filter-footer">
+                <button class="btn-outline" onclick="clearAllFilters()">Zurücksetzen</button>
+                <button class="btn-primary" onclick="applyMobileFilters()">Anwenden</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        // Deutsche Lokalisierung für JavaScript
+        window.productsConfig = {
+            language: 'de',
+            currency: '€',
+            currencyPosition: 'after',
+            messages: {
+                loading: 'Produkte werden geladen...',
+                noResults: 'Keine Produkte gefunden',
+                addedToCart: 'Zum Warenkorb hinzug',
+                addedToCompare: 'Zum Vergleich hinzugefügt',
+                removedFromCompare: 'Aus Vergleich entfernt',
+                maxCompareReached: 'Maximal 4 Produkte können verglichen werden',
+                filterApplied: 'Filter angewendet',
+                filterCleared: 'Filter zurückgesetzt'
+            },
+            productsPerPage: 12,
+            enableQuickView: true,
+            enableCompare: true,
+            maxCompareItems: 4
+        };
+    </script>
+</body>
+</html>

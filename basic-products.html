@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Standing Desks - Shimo Smart Standing Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/basic-products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="basic-products-en.html" class="lang-btn active">English</a>
+                <a href="basic-products-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Basic Standing Desks</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <a href="products-en.html">Products</a> > <span>Basic Series</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Navigation -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-en.html" class="category-tab">All</a>
+                <a href="basic-products-en.html" class="category-tab active">Basic Series</a>
+                <a href="premium-products-en.html" class="category-tab">Premium Series</a>
+                <a href="smart-products-en.html" class="category-tab">Smart Series</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basic Products Introduction -->
+    <section class="category-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Simple and Practical Classic Choice</h2>
+                    <p>The Basic Standing Desk series provides a stable and reliable height adjustment experience, meeting daily office and study needs at an affordable price. Made with quality materials and featuring a minimalist design style suitable for various environments.</p>
+                    <ul class="feature-list">
+                        <li>Manual or electric height adjustment mechanism</li>
+                        <li>Sturdy steel frame structure</li>
+                        <li>High cost-performance ratio</li>
+                        <li>Multiple desktop material options</li>
+                        <li>Simple and easy-to-use operation</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <img src="images/basic-desk-hero.jpg" alt="Basic Standing Desk">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="0-120">$0-120</option>
+                        <option value="120-180">$120-180</option>
+                        <option value="180+">$180+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Desktop Material</label>
+                    <select id="materialFilter">
+                        <option value="all">All Materials</option>
+                        <option value="wood">Solid Wood</option>
+                        <option value="bamboo">Bamboo</option>
+                        <option value="mdf">MDF</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Color</label>
+                    <select id="colorFilter">
+                        <option value="all">All Colors</option>
+                        <option value="natural">Natural Wood</option>
+                        <option value="white">Pure White</option>
+                        <option value="black">Classic Black</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品列表 -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="basicProductsGrid">
+                <!-- Basic products will be dynamically loaded via JavaScript -->
+                <!-- Sample product cards -->
+                <div class="product-card" data-price="119" data-material="mdf" data-color="white">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-1.jpg" alt="Simple Electric Standing Desk">
+                        <div class="product-tag">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Simple Electric Standing Desk</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <p class="product-price">$119</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-1" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-1">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-1">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="135" data-material="wood" data-color="natural">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-2.jpg" alt="Solid Wood Panel Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Solid Wood Panel Standing Desk</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(28)</span>
+                        </div>
+                        <p class="product-price">$135</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-2" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-2">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-2">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="149" data-material="bamboo" data-color="natural">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-3.jpg" alt="Bamboo Standing Workstation">
+                        <div class="product-tag">Eco-Friendly</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bamboo Standing Workstation</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(36)</span>
+                        </div>
+                        <p class="product-price">$149</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-3" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-3">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="195" data-material="mdf" data-color="black">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-4.jpg" alt="Dual Motor Standing Desk">
+                        <div class="product-tag">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dual Motor Standing Desk</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(15)</span>
+                        </div>
+                        <p class="product-price">$195</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-4" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-4">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-4">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="112" data-material="mdf" data-color="white">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-5.jpg" alt="Compact Standing Study Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Compact Standing Study Desk</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(24)</span>
+                        </div>
+                        <p class="product-price">$112</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-5" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-5">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-5">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-price="165" data-material="wood" data-color="natural">
+                    <div class="product-image">
+                        <img src="images/products/basic-desk-6.jpg" alt="L-Shaped Corner Standing Desk">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">L-Shaped Corner Standing Desk</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(19)</span>
+                        </div>
+                        <p class="product-price">$165</p>
+                        <div class="product-actions">
+                            <a href="product-detail-en.html?id=basic-6" class="btn-secondary">View Details</a>
+                            <button class="add-to-cart" data-product-id="basic-6">Add to Cart</button>
+                            <button class="buy-now" data-product-id="basic-6">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" data-page="prev">Previous</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn" data-page="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Recommendations -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Related Recommendations</h2>
+            <div class="related-slider">
+                <div class="related-card">
+                    <img src="images/products/premium-desk-1.jpg" alt="Premium Standing Desk">
+                    <h3>Premium Standing Desk</h3>
+                    <p>Upgrade your office experience</p>
+                    <a href="premium-products-en.html" class="btn-text">View Details →</a>
+                </div>
+                <div class="related-card">
+                    <img src="images/products/accessories-1.jpg" alt="Desktop Accessories">
+                    <h3>Desktop Accessories</h3>
+                    <p>Perfect your workspace</p>
+                    <a href="accessories-en.html" class="btn-text">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shimo</h3>
+                    <p>Professional standing desk brand, committed to creating a healthy and comfortable working environment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="basic-products-en.html">Basic Standing Desks</a></li>
+                <li><a href="premium-products-en.html">Premium Standing Desks</a></li>
+                <li><a href="smart-products-en.html">Smart Standing Desks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="contact-en.html#support">After-sales Service</a></li>
+                <li><a href="support-en.html#installation">Installation Guide</a></li>
+                <li><a href="support-en.html#warranty">Warranty Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Phone: 400-123-4567</li>
+                        <li>Email: info@Shimo.com</li>
+                        <li>Address: xxx Street, Chaoyang District, Beijing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shimo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        // Basic products page specific scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize filter functionality
+            initProductFilters('basicProductsGrid');
+            
+            // Load more products (if pagination exists)
+            initPagination();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktieren Sie uns - Shimo Intelligente Höhenverstellbare Schreibtische</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigationsleiste Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachumschalter -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="contact-en.html" class="lang-btn" data-lang="en">English</a>
+                <a href="contact-de.html" class="lang-btn active" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt-Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Kontaktieren Sie uns</h1>
+            <div class="breadcrumb">
+                <a href="index-de.html">Startseite</a> > <span>Kontakt</span>
+            </div>
+            <p class="contact-description">
+                Egal, ob Sie Fragen, Vorschläge oder Kooperationsabsichten haben, Sie können uns über die folgenden Kanäle kontaktieren.
+                Das Shimo-Team steht Ihnen mit professionellem und effizientem Service zur Verfügung.
+            </p>
+        </div>
+    </section>
+
+    <!-- Kontaktinformationen und Formular -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Kontaktdaten</h2>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Kundenservice-Hotline</h3>
+                            <p>+49-800-123-4567</p>
+                            <p class="info-note">Montag bis Sonntag 9:00-21:00 Uhr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+ 
+                        <div class="info-content">
+                            <h3>E-Mail</h3>
+                            <p>Kundenservice: service@shimo.de</p>
+                            <p>Geschäftskooperation: business@shimo.de</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Firmenadresse</h3>
+                            <p>Shimo-Gebäude, Musterstraße 5, 10115 Berlin, Deutschland</p>
+                            <p class="info-note">Postleitzahl: 10115</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Social Media</h3>
+                            <p>Scannen Sie den QR-Code, um uns auf Social Media zu folgen</p>
+                            <div class="qr-code">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Kontaktanfrage</h2>
+                    <p class="form-intro">Bitte füllen Sie das folgende Formular aus, wir werden innerhalb eines Werktages antworten</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-Mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Betreff <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Bitte wählen Sie einen Betreff</option>
+                                <option value="product">Produktanfrage</option>
+                                <option value="order">Bestellstatus</option>
+                                <option value="afterservice">Kundenservice</option>
+                                <option value="complaint">Beschwerden & Vorschläge</option>
+                                <option value="cooperation">Geschäftskooperation</option>
+                                <option value="other">Andere Anfragen</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nachricht <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group verification">
+                            <label for="verification">Bestätigungscode <span class="required">*</span></label>
+                            <div class="verification-container">
+                                <input type="text" id="verification" name="verification" required>
+                                <div class="verification-code">
+ 
+                                    <a href="#" class="refresh-code">Aktualisieren</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Ich habe die <a href="privacy-de.html">Datenschutzrichtlinien</a> gelesen und stimme ihnen zu</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">Anfrage absenden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Karte und Geschäfte -->
+    <section class="map-stores">
+        <div class="container">
+            <h2 class="section-title">Unsere Showrooms</h2>
+            <p class="stores-intro">
+                Wir haben Showrooms in wichtigen Städten Deutschlands. Besuchen Sie uns und erleben Sie die hervorragende Qualität und intelligente Technologie von Shimo höhenverstellbaren Schreibtischen.
+            </p>
+            
+            <div class="map-container">
+                <div id="germanyMap" class="china-map">
+                    <!-- Karte wird über JavaScript geladen -->
+                    <img src="picture/ditu.jpg" alt="US Map" class="map-placeholder">
+                </div>
+                
+                <div class="store-list">
+                    <div class="store-tabs">
+                        <button class="store-tab active" data-region="north">Norddeutschland</button>
+                        <button class="store-tab" data-region="east">Ostdeutschland</button>
+                        <button class="store-tab" data-region="south">Süddeutschland</button>
+                        <button class="store-tab" data-region="west">Westdeutschland</button>
+                    </div>
+                    
+                    <div class="store-panels">
+                        <div class="store-panel active" data-region="north">
+                            <div class="store-item">
+                                <h3>Berlin Flagship-Store</h3>
+                                <p><strong>Adresse:</strong> Kurfürstendamm 88, 10709 Berlin</p>
+                                <p><strong>Telefon:</strong> 030-12345678</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="berlin">Karte anzeigen</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Hamburg Store</h3>
+                                <p><strong>Adresse:</strong> Mönckebergstraße 15, 20095 Hamburg</p>
+                                <p><strong>Telefon:</strong> 040-87654321</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="hamburg">Karte anzeigen</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="east">
+                            <div class="store-item">
+                                <h3>Dresden Store</h3>
+                                <p><strong>Adresse:</strong> Prager Straße 12, 01069 Dresden</p>
+                                <p><strong>Telefon:</strong> 0351-9876543</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-19:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="dresden">Karte anzeigen</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Leipzig Store</h3>
+                                <p><strong>Adresse:</strong> Petersstraße 36, 04109 Leipzig</p>
+                                <p><strong>Telefon:</strong> 0341-1234567</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-19:30 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="leipzig">Karte anzeigen</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="south">
+                            <div class="store-item">
+                                <h3>München Flagship-Store</h3>
+                                <p><strong>Adresse:</strong> Kaufingerstraße 28, 80331 München</p>
+                                <p><strong>Telefon:</strong> 089-87654321</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="muenchen">Karte anzeigen</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Stuttgart Store</h3>
+                                <p><strong>Adresse:</strong> Königstraße 56, 70173 Stuttgart</p>
+                                <p><strong>Telefon:</strong> 0711-9876543</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="stuttgart">Karte anzeigen</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="west">
+                            <div class="store-item">
+                                <h3>Köln Store</h3>
+                                <p><strong>Adresse:</strong> Schildergasse 65, 50667 Köln</p>
+                                <p><strong>Telefon:</strong> 0221-1234567</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="koeln">Karte anzeigen</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Düsseldorf Store</h3>
+                                <p><strong>Adresse:</strong> Schadowstraße 28, 40212 Düsseldorf</p>
+                                <p><strong>Telefon:</strong> 0211-9876543</p>
+                                <p><strong>Öffnungszeiten:</strong> Montag bis Samstag 10:00-20:00 Uhr</p>
+                                <a href="#" class="btn-text view-map" data-store="duesseldorf">Karte anzeigen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Häufig gestellte Fragen -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Häufig gestellte Fragen</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie kann ich den Status meiner Bestellung überprüfen?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Sie können den Status Ihrer Bestellung auf folgende Weise überprüfen:
+                        </p>
+                        <ol>
+                            <li>Melden Sie sich auf der Shimo-Website in Ihrem persönlichen Konto an und sehen Sie unter "Meine Bestellungen" nach</li>
+                            <li>Überprüfen Sie den Status mit der Bestellnummer aus Ihrer Bestätigungs-E-Mail auf unserer "Bestellstatus"-Seite</li>
+                            <li>Rufen Sie unsere Kundenservice-Hotline +49-800-123-4567 an und geben Sie Ihre Bestellnummer an</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie lange gilt die Garantie für Shimo-Produkte?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo bietet branchenführende Garantieleistungen für höhenverstellbare Schreibtische:
+                        </p>
+                        <ul>
+                            <li>Motor und Steuerungssystem: 5 Jahre Garantie</li>
+                            <li>Tischgestell: 10 Jahre Garantie</li>
+                            <li>Tischplattenmaterial: 3 Jahre Garantie</li>
+                            <li>Intelligentes Zubehör: 2 Jahre Garantie</li>
+                        </ul>
+                        <p>Ausführliche Garantiebestimmungen finden Sie in unseren <a href="warranty-de.html">Garantiebedingungen</a></p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie installiere ich meinen Shimo höhenverstellbaren Schreibtisch?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo höhenverstellbare Schreibtische haben ein modulares Design für einfache Installation. Sie können:
+                        </p>
+                        <ul>
+                            <li>Unseren professionellen Installationsservice wählen (in bestimmten Regionen kostenlos)</li>
+                            <li>Den Schreibtisch selbst anhand der mitgelieferten Installationsanleitung aufbauen</li>
+                            <li>Unsere <a href="installation-de.html">Video-Tutorials zur Installation</a> auf unserer Website ansehen</li>
+                        </ul>
+                        <p>Bei Fragen zur Installation können Sie jederzeit unsere Kundenservice-Hotline kontaktieren.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Welche Zahlungsmethoden akzeptiert Shimo?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Wir akzeptieren verschiedene Zahlungsmethoden, darunter:
+                        </p>
+                        <ul>
+                            <li>Kreditkarte/Debitkarte</li>
+                            <li>PayPal</li>
+                            <li>Banküberweisung</li>
+                            <li>Ratenzahlung (verschiedene Finanzierungsoptionen)</li>
+                        </ul>
+                        <p>Für Unternehmenseinkäufe kontaktieren Sie bitte unser Geschäftsteam für weitere Zahlungsoptionen.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie kann ich eine Rückgabe oder einen Umtausch beantragen?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Wir bieten eine 14-tägige Rückgabe- und Umtauschgarantie (für unbenutzte Produkte in Originalverpackung). Der Prozess ist wie folgt:
+                        </p>
+                        <ol>
+                            <li>Melden Sie sich in Ihrem Konto an und klicken Sie auf "Rückgabe/Umtausch beantragen" auf der Bestelldetailseite</li>
+                            <li>Geben Sie den Grund für die Rückgabe/den Umtausch an und senden Sie den Antrag ab</li>
+                            <li>Unser Kundenservice wird Sie innerhalb von 24 Stunden kontaktieren, um die Rückgabe/den Umtausch zu organisieren</li>
+                        </ol>
+                        <p>Hinweis: Maßgefertigte Produkte, bereits installierte oder benutzte Produkte fallen möglicherweise nicht unter die 14-tägige Rückgabegarantie. Einzelheiten finden Sie in unserer <a href="return-policy-de.html">Rückgaberichtlinie</a>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-questions">
+                <p>Haben Sie nicht gefunden, wonach Sie suchen?</p>
+                <a href="faq-de.html" class="btn-secondary">Weitere häufig gestellte Fragen ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kooperationsmöglichkeiten -->
+    <section class="cooperation">
+        <div class="container">
+            <div class="cooperation-content">
+                <div class="cooperation-text">
+                    <h2>Kooperationsmöglichkeiten</h2>
+                    <p>
+                        Shimo ist bestrebt, langfristige und gegenseitig vorteilhafte Beziehungen mit Partnern aus verschiedenen Branchen aufzubauen.
+                        Ob Sie Händler, Distributor, Büromöbelhändler, Unternehmenseinkäufer oder Designer, Medienvertreter oder Partner aus anderen relevanten Bereichen sind,
+                        wir heißen Sie herzlich willkommen.
+                    </p>
+                    <h3>Unsere Kooperationsmöglichkeiten</h3>
+                    <ul class="cooperation-list">
+                        <li>Markenvertretung und Distributionspartnerschaften</li>
+                        <li>Unternehmensanpassungen und Großbestellungen</li>
+                        <li>Designerkooperationsprogramm</li>
+                        <li>Medien- und Markenkooperationen</li>
+                        <li>Technische Innovation und Produktentwicklungskooperationen</li>
+                    </ul>
+                    <a href="cooperation-de.html" class="btn-primary">Erfahren Sie mehr über Kooperationen</a>
+                </div>
+                <div class="cooperation-image">
+                    <img src="images/cooperation.jpg" alt="Kooperationsmöglichkeiten">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fußzeilen-Container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ-Umschaltfunktion initialisieren
+            initFaqToggle();
+            
+            // Karte und Store-Umschaltung initialisieren
+            initStoreMap();
+            
+            // Formularvalidierung
+            initContactForm();
+        });
+    </script>
+</body>
+</html>

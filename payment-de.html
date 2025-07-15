@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetzt bezahlen - Shimo Smart Stehschreibtisch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigationsleiste Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachumschalter -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="payment-en.html" class="lang-btn">English</a>
+                <a href="payment-de.html" class="lang-btn active">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zahlungsseite Header -->
+    <section class="payment-header">
+        <div class="container">
+            <div class="header-navigation">
+                <!-- Zurück-Button -->
+                <button class="back-button" onclick="goBack()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Zurück
+                </button>
+                
+                <!-- Brotkrümel-Navigation -->
+                <div class="breadcrumb">
+                    <a href="index-de.html">Startseite</a> > 
+                    <a href="products-de.html">Produkte</a> > 
+                    <a href="product-detail-de.html">Produktdetails</a> > 
+                    <span>Bezahlung</span>
+                </div>
+            </div>
+            <h1 class="page-title">Bestellbezahlung</h1>
+        </div>
+    </section>
+
+    <!-- Zahlungs-Hauptinhalt -->
+    <main class="payment-container">
+        <div class="container">
+            <div class="payment-grid">
+                <!-- Linke Seite: Bestellinformationen -->
+                <div class="order-summary">
+                    <h2>Bestelldetails</h2>
+                    <div class="order-item">
+                        <div class="item-image">
+                            <img src="picture/1010.png" alt="Smart Stehschreibtisch Pro Max" id="product-image">
+                        </div>
+                        <div class="item-details">
+                            <h3 id="product-name">Smart Stehschreibtisch Pro Max</h3>
+                            <div class="item-specs">
+                                <span class="spec-color">Klassisches Schwarz</span>
+                                <span class="spec-size">140×70cm</span>
+                            </div>
+                            <div class="item-quantity">
+                                <span>Menge:</span>
+                                <span id="product-quantity">1</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <span id="product-price">597.87 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary-details">
+                        <div class="summary-row">
+                            <span>Produktbetrag</span>
+                            <span id="subtotal">597.87 €</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Versand</span>
+                            <span id="shipping">0 €</span>
+                        </div>
+                        <div class="summary-row discount">
+                            <span>Rabatt</span>
+                            <span id="discount">78 €</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Gesamt</span>
+                            <span id="total">519.87/span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rechte Seite: Lieferadresse und Zahlungsmethode -->
+                <div class="payment-details">
+                    <div class="shipping-address">
+                        <div class="section-header">
+                            <h2>Lieferadresse</h2>
+                            <button class="btn-text">Adressen verwalten</button>
+                        </div>
+                        
+                        <div class="address-list">
+                            <div class="address-item selected">
+                                <div class="address-info">
+                                    <div class="address-name-phone">
+                                        <span class="address-name">Max Müller</span>
+                                        <span class="address-phone">+49 30 ****5678</span>
+                                    </div>
+                                    <div class="address-detail">
+                                        Musterstraße 123, 10115 Berlin, Deutschland
+                                    </div>
+                                    <div class="address-tag">
+                                        <span class="tag">Zuhause</span>
+                                        <span class="default-tag">Standardadresse</span>
+                                    </div>
+                                </div>
+                                <div class="address-select">
+                                    <div class="radio-button selected"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="address-item">
+                                <div class="address-info">
+                                    <div class="address-name-phone">
+                                        <span class="address-name">Max Müller</span>
+                                        <span class="address-phone">+49 30 ****5678</span>
+                                    </div>
+                                    <div class="address-detail">
+                                        Alexanderplatz 1, 10178 Berlin, Deutschland
+                                    </div>
+                                    <div class="address-tag">
+                                        <span class="tag">Büro</span>
+                                    </div>
+                                </div>
+                                <div class="address-select">
+                                    <div class="radio-button"></div>
+                                </div>
+                            </div>
+                            
+                            <button class="add-address-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Neue Adresse hinzufügen
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h2>Zahlungsmethode</h2>
+                        
+                        <div class="payment-method-list">
+                            <div class="payment-method-item selected">
+                                <div class="payment-method-info">
+                                    <img src="images/payment/visa.svg" alt="Visa" class="payment-icon">
+                                    <span class="payment-name">Visa</span>
+                                </div>
+                                <div class="payment-select">
+                                    <div class="radio-button selected"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method-item">
+                                <div class="payment-method-info">
+                                    <img src="images/payment/mastercard.svg" alt="Mastercard" class="payment-icon">
+                                    <span class="payment-name">Mastercard</span>
+                                </div>
+                                <div class="payment-select">
+                                    <div class="radio-button"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-method-item">
+                                <div class="payment-method-info">
+                                    <img src="images/payment/paypal.svg" alt="PayPal" class="payment-icon">
+                                    <span class="payment-name">PayPal</span>
+                                </div>
+                                <div class="payment-select">
+                                    <div class="radio-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="invoice-options">
+                        <h2>Rechnungsinformationen</h2>
+                        
+                        <div class="invoice-type">
+                            <label class="radio-label">
+                                <input type="radio" name="invoice-type" checked>
+                                <span class="radio-text">Elektronische Rechnung</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="invoice-type">
+                                <span class="radio-text">Papierrechnung</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="invoice-type">
+                                <span class="radio-text">Keine Rechnung benötigt</span>
+                            </label>
+                        </div>
+                        
+                        <div class="invoice-details">
+                            <div class="form-group">
+                                <label>Rechnungstitel</label>
+                                <div class="invoice-title-options">
+                                    <label class="radio-label">
+                                        <input type="radio" name="invoice-title-type" checked>
+                                        <span class="radio-text">Privatperson</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="invoice-title-type">
+                                        <span class="radio-text">Unternehmen</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="invoice-email">Empfangs-E-Mail</label>
+                                <input type="email" id="invoice-email" placeholder="Bitte geben Sie die E-Mail für den Empfang der elektronischen Rechnung ein">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-options">
+                        <h2>Versandmethode</h2>
+                        
+                        <div class="delivery-method-list">
+                            <div class="delivery-method-item selected">
+                                <div class="delivery-method-info">
+                                    <span class="delivery-name">Standardversand</span>
+                                    <span class="delivery-detail">Voraussichtliche Lieferung in 3-5 Werktagen</span>
+                                </div>
+                                <div class="delivery-price">Kostenlos</div>
+                                <div class="delivery-select">
+                                    <div class="radio-button selected"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="delivery-method-item">
+                                <div class="delivery-method-info">
+                                    <span class="delivery-name">Expressversand</span>
+                                    <span class="delivery-detail">Voraussichtliche Lieferung in 1-2 Werktagen</span>
+                                </div>
+                                <div class="delivery-price">40 €</div>
+                                <div class="delivery-select">
+                                    <div class="radio-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-message">
+                        <h2>Bestellhinweise</h2>
+                        <textarea placeholder="Bitte geben Sie Ihre besonderen Anforderungen oder Hinweise ein (optional)" maxlength="200"></textarea>
+                        <div class="message-counter">0/200</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Untere Zahlungsleiste -->
+            <div class="payment-bar">
+                <div class="container">
+                    <div class="payment-bar-content">
+                        <div class="payment-summary">
+                            <span class="total-label">Zu zahlender Betrag:</span>
+                            <span class="total-price">3.799 €</span>
+                        </div>
+                        <div class="payment-actions">
+                            <button class="btn-back" onclick="goBack()">Zurück zum Warenkorb</button>
+                            <button class="btn-primary submit-payment">Zahlung bestätigen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Zahlungserfolgsdialog -->
+    <div class="payment-modal" id="paymentSuccessModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Zahlung erfolgreich</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Ihre Bestellung wurde erfolgreich bezahlt!</h3>
+                <p>Bestellnummer: <span id="order-number">2023051512345</span></p>
+                <p>Vielen Dank für Ihren Einkauf. Wir werden Ihre Bestellung so schnell wie möglich versenden.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="location.href='orders-de.html'">Bestellung anzeigen</button>
+                <button class="btn-primary" onclick="location.href='index-de.html'">Zur Startseite</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fußzeile Container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

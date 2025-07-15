@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全部产品 - Shimo智能升降桌</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="探索Shimo智能升降桌的完整产品系列 - 从基础款到高端款和智能款。人体工学升降桌解决方案。">
+    <meta name="keywords" content="升降桌, 高度可调, 人体工学, 办公家具, 智能桌, 全部产品">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="products-en.html" class="lang-btn active" data-lang="en">English</a>
+                <a href="products-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>全部产品</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <span>Products</span>
+            </div>
+            <p class="page-description">探索我们完整的高品质升降桌系列，为每种需求和预算设计的人体工学解决方案。</p>
+        </div>
+    </section>
+
+    <!-- 产品分类导航 -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-en.html" class="category-tab active" data-category="all">
+                    <span class="tab-text">全部产品</span>
+                </a>
+                <a href="basic-products-en.html" class="category-tab" data-category="basic">
+                    <span class="tab-text">基础系列</span>
+                </a>
+                <a href="premium-products-en.html" class="category-tab" data-category="premium">
+                    <span class="tab-text">高端系列</span>
+                </a>
+                <a href="smart-products-en.html" class="category-tab" data-category="smart">
+                    <span class="tab-text">智能系列</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品筛选器 -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-header">
+                <h3>筛选与排序</h3>
+                <button id="clearFilters" class="btn-outline">清除筛选</button>
+            </div>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="priceFilter">价格区间</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">全部价格</option>
+                        <option value="0-900">¥0 - ¥900</option>
+                        <option value="900-1800">¥900 - ¥1800</option>
+                        <option value="1800-2700">¥1800 - ¥2700</option>
+                        <option value="2700-3600">¥2700 - ¥3600</option>
+                        <option value="3600+">¥3600以上</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="materialFilter">桌面材质</label>
+                    <select id="materialFilter" class="filter-select">
+                        <option value="all">全部材质</option>
+                        <option value="wood">实木</option>
+                        <option value="bamboo">竹材</option>
+                        <option value="glass">钢化玻璃</option>
+                        <option value="metal">金属</option>
+                        <option value="laminate">层压板</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="colorFilter">颜色</label>
+                    <select id="colorFilter" class="filter-select">
+                        <option value="all">全部颜色</option>
+                        <option value="natural">原木色</option>
+                        <option value="white">纯白色</option>
+                        <option value="black">经典黑</option>
+                        <option value="gray">现代灰</option>
+                        <option value="walnut">胡桃木</option>
+                        <option value="oak">橡木色</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sizeFilter">尺寸</label>
+                    <select id="sizeFilter" class="filter-select">
+                        <option value="all">全部尺寸</option>
+                        <option value="120x60">120×60cm (紧凑型)</option>
+                        <option value="140x70">140×70cm (标准型)</option>
+                        <option value="160x80">160×80cm (大型)</option>
+                        <option value="180x80">180×80cm (超大型)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">排序方式</label>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="default">推荐排序</option>
+                        <option value="price-low">价格：从低到高</option>
+                        <option value="price-high">价格：从高到低</option>
+                        <option value="name-az">名称：A-Z</option>
+                        <option value="name-za">名称：Z-A</option>
+                        <option value="newest">最新上架</option>
+                        <option value="rating">评分最高</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">应用筛选</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品网格 -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-header">
+                <div class="results-info">
+                    <span id="resultsCount">找到12个产品</span>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid" title="网格视图">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"/>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="list" title="列表视图">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="products-container" id="productsGrid">
+                <!-- 产品将通过JavaScript动态加载 -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>正在加载产品...</p>
+                </div>
+            </div>
+            
+            <!-- 无结果消息 -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>未找到产品</h3>
+                <p>请尝试调整筛选条件或清除所有筛选以查看更多结果。</p>
+                <button class="btn-primary" onclick="clearAllFilters()">清除所有筛选</button>
+            </div>
+            
+            <!-- 分页 -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn prev" data-page="prev" disabled>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    上一页
+                </button>
+                <div class="page-numbers" id="pageNumbers">
+                    <span class="page-number active" data-page="1">1</span>
+                    <span class="page-number" data-page="2">2</span>
+                    <span class="page-number" data-page="3">3</span>
+                </div>
+                <button class="page-btn next" data-page="next">
+                    下一页
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品对比侧边栏 -->
+    <div class="compare-sidebar" id="compareSidebar">
+        <div class="compare-header">
+            <h3>产品对比</h3>
+            <button class="close-compare" onclick="closeCompare()">×</button>
+        </div>
+        <div class="compare-products" id="compareProducts">
+            <!-- 对比产品将在此添加 -->
+        </div>
+        <div class="compare-actions">
+            <button class="btn-primary" onclick="goToCompare()" disabled id="compareBtn">
+                对比 (<span id="compareCount">0</span>)
+            </button>
+            <button class="btn-outline" onclick="clearCompare()">清空全部</button>
+        </div>
+    </div>
+
+    <!-- 快速查看模态框 -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-overlay" onclick="closeQuickView()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuickView()">×</button>
+            <div class="quick-view-content" id="quickViewContent">
+                <!-- 快速查看内容将在此加载 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 帮助提示 -->
+    <div class="help-tooltip" id="helpTooltip">
+        <div class="tooltip-content">
+            <h4>需要帮助？</h4>
+            <p>我们的产品专家很乐意帮助您选择最适合您需求的升降桌。</p>
+            <div class="tooltip-actions">
+                <a href="contact-en.html" class="btn-primary">Contact Us</a>
+                <a href="tel:400-123-4567" class="btn-outline">立即致电</a>
+            </div>
+        </div>
+        <button class="tooltip-close" onclick="closeHelpTooltip()">×</button>
+    </div>
+
+    <!-- 浮动操作按钮 -->
+    <div class="floating-actions">
+        <button class="fab help-fab" onclick="showHelpTooltip()" title="需要帮助？">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+        </button>
+        <button class="fab filter-fab" onclick="toggleMobileFilters()" title="筛选">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46"></polygon>
+            </svg>
+        </button>
+    </div>
+
+    <!-- 移动端筛选覆盖层 -->
+    <div class="mobile-filter-overlay" id="mobileFilterOverlay">
+        <div class="mobile-filter-content">
+            <div class="mobile-filter-header">
+                <h3>筛选与排序</h3>
+                <button class="close-mobile-filter" onclick="closeMobileFilters()">×</button>
+            </div>
+            <div class="mobile-filter-body">
+                <!-- 移动端筛选内容将在此复制 -->
+            </div>
+            <div class="mobile-filter-footer">
+                <button class="btn-outline" onclick="clearAllFilters()">重置</button>
+                <button class="btn-primary" onclick="applyMobileFilters()">应用</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品推荐 -->
+    <section class="product-recommendations" style="display: none;" id="recommendations">
+        <div class="container">
+            <h3>您可能还喜欢</h3>
+            <div class="recommendations-grid" id="recommendationsGrid">
+                <!-- 推荐产品将在此加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 邮件订阅 -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>保持更新</h3>
+                    <p>获取最新产品更新、独家优惠和人体工学小贴士，直接发送到您的邮箱。</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="请输入您的邮箱地址" required>
+                    <button type="submit" class="btn-primary">订阅</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        // 中文本地化配置
+        window.productsConfig = {
+            language: 'zh',
+            currency: '¥',
+            currencyPosition: 'before',
+            messages: {
+                loading: '正在加载产品...',
+                noResults: '未找到产品',
+                addedToCart: '已添加到购物车',
+                addedToCompare: '已添加到对比',
+                removedFromCompare: '已从对比中移除',
+                maxCompareReached: '最多可对比4个产品',
+                filterApplied: '筛选已应用',
+                filtersCleared: '筛选已清除',
+                quickViewLoading: '正在加载产品详情...',
+                newsletterSuccess: '成功订阅邮件！',
+                newsletterError: '订阅失败，请重试。',
+                contactSupport: '联系我们的客服团队获取帮助'
+            },
+            features: {
+                compare: true,
+                quickView: true,
+                wishlist: true,
+                reviews: true,
+                recommendations: true
+            }
+        };
+    </script>
+</body>
+</html>

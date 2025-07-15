@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellbestätigung - AI Smart Products</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/payment.css">
+    <style>
+        .confirmation-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #4CAF50;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+        .order-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .action-buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 12px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index-de.html">AI Smart Products</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index-de.html" class="nav-link">Startseite</a>
+                    <a href="products-de.html" class="nav-link">Produkte</a>
+                    <a href="about-de.html" class="nav-link">Über uns</a>
+                    <a href="contact-de.html" class="nav-link">Kontakt</a>
+                </div>
+                <div class="language-switcher">
+                    <select onchange="switchLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="de" selected>Deutsch</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <div class="success-icon">✓</div>
+            <h1>Zahlung erfolgreich!</h1>
+            <p>Vielen Dank für Ihren Kauf. Ihre Bestellung wurde bestätigt und wird in Kürze bearbeitet.</p>
+            
+            <div class="order-details">
+                <h3>Bestelldetails</h3>
+                <div class="detail-row">
+                    <span>Bestellnummer:</span>
+                    <span id="order-number-display">-</span>
+                </div>
+                <div class="detail-row">
+                    <span>Bestelldatum:</span>
+                    <span id="order-date">-</span>
+                </div>
+                <div class="detail-row">
+                    <span>Zahlungsmethode:</span>
+                    <span id="payment-method">-</span>
+                </div>
+                <div class="detail-row">
+                    <span>Gesamtbetrag:</span>
+                    <span id="total-amount">-</span>
+                </div>
+                <div class="detail-row">
+                    <span>Voraussichtliche Lieferung:</span>
+                    <span id="delivery-date">3-5 Werktage</span>
+                </div>
+            </div>
+            
+            <p>Eine Bestätigungs-E-Mail mit detaillierten Bestellinformationen wurde an Ihre registrierte E-Mail-Adresse gesendet.</p>
+            
+            <div class="action-buttons">
+                <a href="products-de.html" class="btn btn-primary">Weiter einkaufen</a>
+                <a href="index-de.html" class="btn btn-secondary">Zur Startseite</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AI Smart Products</h3>
+                <p>Führender Anbieter von KI-gestützten Smart-Produkten für modernes Leben.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Schnelllinks</h3>
+                <ul>
+                    <li><a href="products-de.html">Produkte</a></li>
+                    <li><a href="about-de.html">Über uns</a></li>
+                    <li><a href="contact-de.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kundenservice</h3>
+                <ul>
+                    <li><a href="#">Support-Center</a></li>
+                    <li><a href="#">Rücksendungen & Umtausch</a></li>
+                    <li><a href="#">Versandinformationen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AI Smart Products. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script>
+        // 获取URL参数中的订单信息
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+        
+        // 页面加载时显示订单信息
+        document.addEventListener('DOMContentLoaded', function() {
+            // 从localStorage获取订单信息或生成新的
+            const orderNumber = localStorage.getItem('orderNumber') || generateOrderNumber();
+            const paymentMethod = localStorage.getItem('paymentMethod') || 'Visa';
+            const totalAmount = localStorage.getItem('totalAmount') || '€2.999';
+            
+            document.getElementById('order-number-display').textContent = orderNumber;
+            document.getElementById('payment-method').textContent = paymentMethod;
+            document.getElementById('total-amount').textContent = totalAmount;
+            
+            // 显示当前日期
+            const today = new Date();
+            const dateString = today.toLocaleDateString('de-DE', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            document.getElementById('order-date').textContent = dateString;
+            
+            // 清除localStorage中的订单信息
+            localStorage.removeItem('orderNumber');
+            localStorage.removeItem('paymentMethod');
+            localStorage.removeItem('totalAmount');
+        });
+        
+        function generateOrderNumber() {
+            const date = new Date();
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const random = Math.floor(Math.random() * 100000).toString().padStart(5, '0');
+            return `${year}${month}${day}${random}`;
+        }
+        
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'order-confirmation-en.html';
+            }
+        }
+    </script>
+</body>
+</html>

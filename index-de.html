@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimo - Intelligente Höhenverstellbare Schreibtische Offizielle Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="index-en.html" class="lang-btn" data-lang="en">English</a>
+                <a href="index-de.html" class="lang-btn active" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 主页横幅 -->
+    <section class="hero">
+        <img src="../picture/beijingde.png" alt="背景图片" class="hero-background">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Höhenverstellbarer Schreibtisch</h1>
+                <p class="hero-subtitle">KI-gesteuerte Empfehlungen für Ihren perfekten Arbeitsplatz</p>
+                <div class="hero-buttons">
+                    <a href="ai-recommend-de.html" class="btn-primary">KI-Empfehlung starten</a>
+                    <a href="ai-chat-de.html" class="btn-primary">Intelligenter Assistent</a>
+                    <a href="products-de.html" class="btn-secondary">Produkte ansehen</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="desk-animation">
+                    <div class="desk-surface"></div>
+                    <div class="desk-legs">
+                        <div class="leg left"></div>
+                        <div class="leg right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品分类预览 -->
+    <section class="category-preview">
+        <div class="container">
+            <h2 class="section-title">Produktserie</h2>
+            <div class="category-cards">
+                <a href="basic-products-de.html" class="category-card">
+                    <img src="picture/21.png" alt="Basis Höhenverstellbarer Schreibtisch">
+                    <h3>Basis Höhenverstellbarer Schreibtisch</h3>
+                    <p>Schlichte und praktische klassische Wahl</p>
+                </a>
+                <a href="premium-products-de.html" class="category-card">
+                    <img src="picture/22.png" alt="Premium Höhenverstellbarer Schreibtisch">
+                    <h3>Premium Höhenverstellbarer Schreibtisch</h3>
+                    <p>Hochwertige Materialien und erweiterte Funktionen</p>
+                </a>
+                <a href="smart-products-de.html" class="category-card">
+                    <img src="picture/23.png" alt="Smart Höhenverstellbarer Schreibtisch">
+                    <h3>Smart Höhenverstellbarer Schreibtisch</h3>
+                    <p>KI-gesteuerte intelligente Bürolösung</p>
+                </a>
+            </div>
+            <div class="view-all">
+                <a href="products-de.html" class="btn-outline">Alle Produkte anzeigen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门推荐 -->
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Beliebte Empfehlungen</h2>
+            <p class="section-subtitle">Intelligente Empfehlungen basierend auf Nutzerdaten</p>
+            <div class="trending-products" id="trendingProducts">
+                <!-- 热门产品将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特色 -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Warum Shimo wählen?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>KI-Empfehlungssystem</h3>
+                    <p>Fortschrittliche KI-Algorithmen analysieren Ihre Bedürfnisse und empfehlen den perfekten Schreibtisch für Sie</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Präzise Höhenverstellung</h3>
+                    <p>Millimetergenaue Höhenverstellung mit Memory-Funktion für verschiedene Benutzer</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Umweltfreundliche Materialien</h3>
+                    <p>Nachhaltige und umweltfreundliche Materialien für eine gesunde Arbeitsumgebung</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>5 Jahre Garantie</h3>
+                    <p>Umfassende Garantie und professioneller Kundendienst für Ihre Sicherheit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Was unsere Kunden sagen</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Der Shimo Schreibtisch hat meine Arbeitsweise völlig verändert. Die KI-Empfehlung war perfekt für meine Bedürfnisse!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/31.png" alt="Kunde 1">
+                        <div class="author-info">
+                            <h4>Anna Schmidt</h4>
+                            <span>Softwareentwicklerin</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Ausgezeichnete Qualität und Design. Der Schreibtisch ist nicht nur funktional, sondern auch sehr elegant."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/32.png" alt="Kunde 2">
+                        <div class="author-info">
+                            <h4>Michael Weber</h4>
+                            <span>Architekt</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Der Kundenservice ist erstklassig. Schnelle Lieferung und einfache Installation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/33.png" alt="Kunde 3">
+                        <div class="author-info">
+                            <h4>Sarah Müller</h4>
+                            <span>Grafikdesignerin</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 简短公司介绍 -->
+    <section class="company-brief">
+        <div class="container">
+            <h2 class="section-title">Über Shimo</h2>
+            <p class="company-intro">Shimo ist eine führende Marke für intelligente höhenverstellbare Schreibtische in China. Wir sind bestrebt, durch innovative Technologie gesunde und komfortable Arbeitsumgebungen zu schaffen. Unsere Produkte kombinieren ergonomisches Design mit intelligenter Steuerungstechnologie und bieten Benutzern professionelle Bürolösungen.</p>
+            <div class="company-stats">
+                <div class="stat-item">
+                    <h3>50,000+</h3>
+                    <p>Zufriedene Kunden</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Produktmodelle</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5 Jahre</h3>
+                    <p>Garantie</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Kundenzufriedenheit</p>
+                </div>
+            </div>
+            <a href="about-de.html" class="btn-text">Mehr erfahren →</a>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Neueste Nachrichten</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Le scrivanie regolabili in altezza valgono la pena? Una guida completa</h3>
+                        <p>Le scrivanie regolabili in altezza sono diventate un elemento popolare negli ambienti di lavoro moderni e negli uffici domestici, spesso lodate per i loro benefici per la salute e la produttività. Ma le scrivanie in piedi valgono davvero l'investimento? In...</p>
+                        <a href="news-detail-de.html?id=1" class="read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Le scrivanie regolabili in altezza valgono la pena? Una guida completa</h3>
+                        <p>Le scrivanie regolabili in altezza sono diventate un elemento popolare negli ambienti di lavoro moderni e negli uffici domestici, spesso lodate per i loro benefici per la salute e la produttività. Ma le scrivanie in piedi valgono davvero l'investimento? In...</p>
+                        <a href="news-detail-de.html?id=2" class="read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Le scrivanie regolabili in altezza valgono la pena? Una guida completa</h3>
+                        <p>Le scrivanie regolabili in altezza sono diventate un elemento popolare negli ambienti di lavoro moderni e negli uffici domestici, spesso lodate per i loro benefici per la salute e la produttività. Ma le scrivanie in piedi valgono davvero l'investimento? In...</p>
+                        <a href="news-detail-de.html?id=3" class="read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="news-de.html" class="btn-outline">Alle Nachrichten anzeigen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA部分 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bereit für Ihren perfekten Arbeitsplatz?</h2>
+                <p>Lassen Sie unsere KI den idealen Schreibtisch für Sie finden</p>
+                <div class="cta-buttons">
+                    <a href="ai-recommend-de.html" class="btn-primary">Jetzt KI-Empfehlung starten</a>
+                    <a href="contact-de.html" class="btn-outline">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 悬浮聊天按钮 -->
+    <div class="chat-float-button" id="chatFloatButton">
+        <i class="fas fa-comments"></i>
+        <span class="chat-tooltip">Intelligenter Kundenservice</span>
+    </div>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shimo Smart Standing Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="contact-en.html" class="lang-btn active" data-lang="en">English</a>
+                <a href="contact-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <span>Contact Us</span>
+            </div>
+            <p class="contact-description">
+                Whether you have questions, suggestions, or partnership opportunities, 
+                you can reach us through the following methods. The Shimo team is 
+                committed to providing professional and efficient service.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact information and form -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Customer Service</h3>
+                            <p>+1-888-Shimo</p>
+                            <p class="info-note">Monday to Sunday 9:00-21:00 EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>Customer Service: service@Shimo.com</p>
+                            <p>Business Partnership: business@Shimo.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+
+                        <div class="info-content">
+                            <h3>Headquarters</h3>
+                            <p>123 Innovation Drive, Tech Valley, CA 94025, USA</p>
+                            <p class="info-note">ZIP Code: 94025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+   
+                        <div class="info-content">
+                            <h3>Follow Us</h3>
+                            <p>Connect with us on social media for updates</p>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <p class="form-intro">Please fill out the form below and we will respond within 1 business day</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select a subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="order">Order Status</option>
+                                <option value="support">Customer Support</option>
+                                <option value="complaint">Complaint/Feedback</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group verification">
+                            <label for="verification">Verification Code <span class="required">*</span></label>
+                            <div class="verification-container">
+                                <input type="text" id="verification" name="verification" required>
+                                <div class="verification-code">
+  
+                                    <a href="#" class="refresh-code">Refresh</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">I have read and agree to the <a href="privacy-en.html">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and stores -->
+    <section class="map-stores">
+        <div class="container">
+            <h2 class="section-title">Experience Centers</h2>
+            <p class="stores-intro">
+                Visit our experience centers in major cities to try Shimo smart standing desks 
+                and experience our exceptional quality and intelligent technology firsthand.
+            </p>
+            
+            <div class="map-container">
+                <div id="usMap" class="us-map">
+                    <!-- Map will be loaded via JavaScript -->
+                    <img src="picture/ditu.jpg" alt="US Map" class="map-placeholder">
+                </div>
+                
+                <div class="store-list">
+                    <div class="store-tabs">
+                        <button class="store-tab active" data-region="west">West Coast</button>
+                        <button class="store-tab" data-region="east">East Coast</button>
+                        <button class="store-tab" data-region="central">Central</button>
+                        <button class="store-tab" data-region="south">South</button>
+                    </div>
+                    
+                    <div class="store-panels">
+                        <div class="store-panel active" data-region="west">
+                            <div class="store-item">
+                                <h3>San Francisco Flagship Store</h3>
+                                <p><strong>Address:</strong> 123 Market Street, San Francisco, CA 94105</p>
+                                <p><strong>Phone:</strong> (415) 555-0123</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="san-francisco">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Los Angeles Store</h3>
+                                <p><strong>Address:</strong> 456 Rodeo Drive, Beverly Hills, CA 90210</p>
+                                <p><strong>Phone:</strong> (310) 555-0456</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="los-angeles">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Seattle Store</h3>
+                                <p><strong>Address:</strong> 789 Pine Street, Seattle, WA 98101</p>
+                                <p><strong>Phone:</strong> (206) 555-0789</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 8:30 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="seattle">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="east">
+                            <div class="store-item">
+                                <h3>New York Flagship Store</h3>
+                                <p><strong>Address:</strong> 321 Fifth Avenue, New York, NY 10016</p>
+                                <p><strong>Phone:</strong> (212) 555-0321</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="new-york">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Boston Store</h3>
+                                <p><strong>Address:</strong> 654 Newbury Street, Boston, MA 02116</p>
+                                <p><strong>Phone:</strong> (617) 555-0654</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 8:30 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="boston">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Washington DC Store</h3>
+                                <p><strong>Address:</strong> 987 Connecticut Avenue NW, Washington, DC 20036</p>
+                                <p><strong>Phone:</strong> (202) 555-0987</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="washington-dc">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="central">
+                            <div class="store-item">
+                                <h3>Chicago Store</h3>
+                                <p><strong>Address:</strong> 147 Michigan Avenue, Chicago, IL 60611</p>
+                                <p><strong>Phone:</strong> (312) 555-0147</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="chicago">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Denver Store</h3>
+                                <p><strong>Address:</strong> 258 16th Street Mall, Denver, CO 80202</p>
+                                <p><strong>Phone:</strong> (303) 555-0258</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 8:30 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="denver">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="south">
+                            <div class="store-item">
+                                <h3>Miami Store</h3>
+                                <p><strong>Address:</strong> 369 Lincoln Road, Miami Beach, FL 33139</p>
+                                <p><strong>Phone:</strong> (305) 555-0369</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 9:00 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="miami">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Austin Store</h3>
+                                <p><strong>Address:</strong> 741 South Congress Avenue, Austin, TX 78704</p>
+                                <p><strong>Phone:</strong> (512) 555-0741</p>
+                                <p><strong>Hours:</strong> Monday - Sunday 10:00 AM - 8:30 PM</p>
+                                <a href="#" class="btn-text view-map" data-store="austin">View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I track my order status?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            You can track your order status through the following methods:
+                        </p>
+                        <ol>
+                            <li>Log into your Shimo account and check "My Orders"</li>
+                            <li>Use the order number from your confirmation email on our "Order Tracking" page</li>
+                            <li>Call our customer service at +1-888-Shimo with your order number</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the warranty period for Shimo products?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo smart standing desks come with industry-leading warranty coverage:
+                        </p>
+                        <ul>
+                            <li>Motor and control system: 5-year warranty</li>
+                            <li>Frame structure: 10-year warranty</li>
+                            <li>Desktop surface: 3-year warranty</li>
+                            <li>Smart accessories: 2-year warranty</li>
+                        </ul>
+                        <p>For detailed warranty terms, please refer to our <a href="warranty-en.html">Warranty Policy</a></p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I install my Shimo standing desk?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo standing desks feature modular design for easy installation. You can:
+                        </p>
+                        <ul>
+                            <li>Choose our professional installation service (free in select areas)</li>
+                            <li>Follow the installation manual included with your product</li>
+                            <li>Watch our <a href="installation-en.html">installation video tutorials</a> online</li>
+                        </ul>
+                        <p>If you have any installation questions, please contact our customer service for support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We accept multiple payment methods, including:
+                        </p>
+                        <ul>
+                            <li>Credit/Debit cards (Visa, MasterCard, American Express)</li>
+                            <li>PayPal</li>
+                            <li>Apple Pay / Google Pay</li>
+                            <li>Financing options (Affirm, Klarna)</li>
+                            <li>Bank transfer (for corporate orders)</li>
+                        </ul>
+                        <p>For enterprise purchases, please contact our business team for additional payment options.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I return or exchange my product?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We offer a 30-day return policy for unused products in original packaging. Return process:
+                        </p>
+                        <ol>
+                            <li>Log into your account and click "Request Return" in your order details</li>
+                            <li>Fill out the return reason and submit your request</li>
+                            <li>Our customer service team will contact you within 24 hours to arrange the return</li>
+                        </ol>
+                        <p>Note: Custom products or installed/used products may not be eligible for the 30-day return policy. Please refer to our <a href="return-policy-en.html">Return Policy</a> for details.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-questions">
+                <p>Didn't find the answer you're looking for?</p>
+                <a href="faq-en.html" class="btn-secondary">View More FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership opportunities -->
+    <section class="cooperation">
+        <div class="container">
+            <div class="cooperation-content">
+                <div class="cooperation-text">
+                    <h2>Partnership Opportunities</h2>
+                    <p>
+                        Shimo is committed to building long-term, mutually beneficial partnerships 
+                        across various industries. Whether you're a dealer, distributor, office furniture 
+                        retailer, corporate buyer, designer, media partner, or from other related fields, 
+                        we warmly welcome you to join us.
+                    </p>
+                    <h3>Partnership Programs We Offer</h3>
+                    <ul class="cooperation-list">
+                        <li>Brand Agency & Distribution Partnership</li>
+                        <li>Corporate Customization & Bulk Purchasing</li>
+                        <li>Designer Collaboration Program</li>
+                        <li>Media & Brand Co-marketing</li>
+                        <li>Technology Innovation & Product Development Partnership</li>
+                    </ul>
+                    <a href="cooperation-en.html" class="btn-primary">Learn More About Partnerships</a>
+                </div>
+                <div class="cooperation-image">
+                    <img src="images/cooperation.jpg" alt="Partnership Opportunities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize FAQ toggle functionality
+            initFaqToggle();
+            
+            // Initialize map and store switching
+            initStoreMap();
+            
+            // Form validation
+            initContactForm();
+        });
+    </script>
+</body>
+</html>

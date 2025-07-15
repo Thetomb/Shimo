@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktdetails - Shimo Smart Stehschreibtisch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Shimo Smart Stehschreibtisch Pro Max - Höhenverstellbarer Schreibtisch mit intelligenter Speicherfunktion und leisem Motor">
+    <meta name="keywords" content="Stehschreibtisch, höhenverstellbar, ergonomisch, Büromöbel, smart desk">
+</head>
+<body>
+    <!-- Navigationsleiste Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Sprachauswahl -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="product-detail-en.html" class="lang-btn">English</a>
+                <a href="product-detail-de.html" class="lang-btn active">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produktdetail-Seiten-Header -->
+    <section class="product-detail-header">
+        <div class="container">
+            <div class="header-navigation">
+                <!-- Zurück-Button -->
+                <button class="back-button" onclick="goBack()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Zurück
+                </button>
+                
+                <!-- Breadcrumb-Navigation -->
+                <div class="breadcrumb">
+                    <a href="index-de.html">Startseite</a> > 
+                    <a href="products-de.html">Produkte</a> > 
+                    <span id="product-category-breadcrumb">Smart Serie</span> > 
+                    <span id="product-name-breadcrumb">Produktname</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hauptinhalt der Produktdetails -->
+    <main class="product-detail-container">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Produktbild-Anzeigebereich -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="images/placeholder.jpg" alt="Produkthauptbild">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active"><img src="images/placeholder-thumb.jpg" alt="Produktminiatur 1"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Produktminiatur 2"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Produktminiatur 3"></div>
+                        <div class="thumbnail"><img src="images/placeholder-thumb.jpg" alt="Produktminiatur 4"></div>
+                    </div>
+                </div>
+                
+                <!-- Produktinformationsbereich -->
+                <div class="product-info">
+                    <h1 id="product-title">Smart Stehschreibtisch Pro Max</h1>
+                    <div class="product-meta">
+                        <span class="product-sku">Artikelnummer: <span id="product-sku">DR-SM-2023</span></span>
+                        <span class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(128 Bewertungen)</span>
+                        </span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price" id="product-price">519,87 €</span>
+                        <span class="original-price">597,87 €</span>
+                        <span class="discount-tag">Sparen Sie 78,00 €</span>
+                    </div>
+                    
+                    <div class="product-colors">
+                        <h3 class="color-label">Farbauswahl</h3>
+                        <div class="color-options">
+                            <div class="color-option active" data-color="black">
+                                <div class="color-swatch" style="background-color: #333;"></div>
+                                <span class="color-name">Klassisches Schwarz</span>
+                            </div>
+                            <div class="color-option" data-color="white">
+                                <div class="color-swatch" style="background-color: #f5f5f5;"></div>
+                                <span class="color-name">Reines Weiß</span>
+                            </div>
+                            <div class="color-option" data-color="wood">
+                                <div class="color-swatch" style="background-color: #d2b48c;"></div>
+                                <span class="color-name">Naturholz</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-sizes">
+                        <h3 class="size-label">Größenauswahl</h3>
+                        <div class="size-options">
+                            <div class="size-option" data-size="120x60">120×60cm</div>
+                            <div class="size-option active" data-size="140x70">140×70cm</div>
+                            <div class="size-option" data-size="160x80">160×80cm</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <span class="quantity-label">Menge:</span>
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="btn-primary add-to-cart">In den Warenkorb</button>
+                        <button class="btn-outline buy-now">Jetzt kaufen</button>
+                    </div>
+                    
+                    <div class="product-share">
+                        <span>Teilen:</span>
+                        <a href="#" class="share-icon wechat">WeChat</a>
+                        <a href="#" class="share-icon weibo">Weibo</a>
+                        <a href="#" class="share-icon facebook">Facebook</a>
+                        <a href="#" class="share-icon twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Produktdetail-Registerkarten -->
+            <div class="product-tabs">
+                <ul class="tab-nav">
+                    <li class="active" data-tab="description" id="description-tab">Beschreibung</li>
+                    <li data-tab="specs" id="specs-tab">Spezifikationen</li>
+                    <li data-tab="reviews" id="reviews-tab">Bewertungen</li>
+                    <li data-tab="qna" id="qa-tab">Fragen & Antworten</li>
+                </ul>
+                
+                <div class="tab-content">
+                    <!-- Produktbeschreibung -->
+                    <div class="tab-pane active" id="description">
+                        <h2>Produktbeschreibung</h2>
+                        <div id="product-description">
+                            <p>Der Shimo Smart Stehschreibtisch Pro Max ist unser Flaggschiff-Produkt, das neuestes ergonomisches Design mit intelligenter Technologie kombiniert. Mit einem hochfesten Luftfahrt-Aluminiumrahmen und einer hochwertigen Massivholz-Tischplatte ausgestattet, unterstützt er elektrische Höhenverstellung und intelligente Speicherfunktionen.</p>
+                            <p>Produktmerkmale:</p>
+                            <ul>
+                                <li>Intelligenter Höhenspeicher: Speichert 4 häufig verwendete Höheneinstellungen für Ein-Klick-Wechsel</li>
+                                <li>Ultra-leiser Motor: Geräuschpegel unter 40 Dezibel während des Betriebs</li>
+                                <li>Anti-Kollisions-Schutz: Stoppt automatisch bei Hindernissen</li>
+                                <li>USB-Ladeanschlüsse: Tischplatte mit 3 integrierten USB-Schnellladeanschlüssen</li>
+                                <li>Kabelloses Ladefeld: Unterstützt Qi-Standard kabelloses Laden</li>
+                            </ul>
+                            <img src="images/product-detail-1.jpg" alt="Produktdetailbild" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <!-- Spezifikationen -->
+                    <div class="tab-pane" id="specs">
+                        <h2>Technische Spezifikationen</h2>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Produktname</th>
+                                <td id="spec-name">Shimo Smart Stehschreibtisch Pro Max</td>
+                            </tr>
+                            <tr>
+                                <th>Produktmodell</th>
+                                <td id="spec-model">DR-SM-2023</td>
+                            </tr>
+                            <tr>
+                                <th>Tischplattenmaterial</th>
+                                <td id="spec-material">FSC-zertifiziertes Massivholz</td>
+                            </tr>
+                            <tr>
+                                <th>Rahmenmaterial</th>
+                                <td id="spec-frame">Luftfahrt-Aluminiumlegierung</td>
+                            </tr>
+                            <tr>
+                                <th>Höhenbereich</th>
+                                <td id="spec-height">60-125cm</td>
+                            </tr>
+                            <tr>
+                                <th>Tragfähigkeit</th>
+                                <td id="spec-weight">120kg</td>
+                            </tr>
+                            <tr>
+                                <th>Motortyp</th>
+                                <td id="spec-motor">Dual-Motor-Antrieb</td>
+                            </tr>
+                            <tr>
+                                <th>Steuerungsmethode</th>
+                                <td id="spec-control">Touch-Panel/Mobile APP/Sprachsteuerung</td>
+                            </tr>
+                            <tr>
+                                <th>Stromanforderungen</th>
+                                <td id="spec-power">220V 50Hz</td>
+                            </tr>
+                            <tr>
+                                <th>Produktgewicht</th>
+                                <td id="spec-netweight">45kg</td>
+                            </tr>
+                            <tr>
+                                <th>Verpackungsmaße</th>
+                                <td id="spec-package">165×85×15cm</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Benutzerbewertungen -->
+                    <div class="tab-pane" id="reviews">
+                        <h2>Kundenbewertungen <span class="review-count">(128)</span></h2>
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <div class="rating-score">4,8</div>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-text">128 Bewertungen</div>
+                            </div>
+                            <div class="rating-distribution">
+                                <div class="rating-bar">
+                                    <span class="rating-label">5 Sterne</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                    <span class="rating-percent">85%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="rating-label">4 Sterne</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 10%;"></div>
+                                    </div>
+                                    <span class="rating-percent">10%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="rating-label">3 Sterne</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 3%;"></div>
+                                    </div>
+                                    <span class="rating-percent">3%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="rating-label">2 Sterne</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 1%;"></div>
+                                    </div>
+                                    <span class="rating-percent">1%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="rating-label">1 Stern</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 1%;"></div>
+                                    </div>
+                                    <span class="rating-percent">1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-list" id="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="review-user">Klaus M.</span>
+                                    <span class="review-date">15.05.2023</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <div class="review-content">
+                                    <h4 class="review-title">Ausgezeichnete Qualität und Service</h4>
+                                    <p class="review-text">Der Schreibtisch ist von hervorragender Qualität, die Höhenverstellung funktioniert sehr sanft und leise. Die Installation war dank der professionellen Monteure problemlos. Die intelligente Speicherfunktion ist besonders praktisch für den täglichen Wechsel zwischen Stehen und Sitzen.</p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="review-user">Anna S.</span>
+                                    <span class="review-date">12.05.2023</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <div class="review-content">
+                                    <h4 class="review-title">Perfekt für das Homeoffice</h4>
+                                    <p class="review-text">Endlich ein Schreibtisch, der alle meine Erwartungen erfüllt. Die App-Steuerung ist intuitiv und die USB-Anschlüsse sehr praktisch. Das Design passt perfekt in mein Homeoffice.</p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="review-user">Michael B.</span>
+                                    <span class="review-date">08.05.2023</span>
+                                    <span class="review-rating">★★★★☆</span>
+                                </div>
+                                <div class="review-content">
+                                    <h4 class="review-title">Sehr zufrieden, kleine Verbesserungsvorschläge</h4>
+                                    <p class="review-text">Insgesamt ein sehr gutes Produkt. Die Verarbeitung ist hochwertig und die Funktionen arbeiten zuverlässig. Einziger Kritikpunkt: Die Kabelführung könnte noch eleganter gelöst werden.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-pagination">
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn next">Weiter ></button>
+                        </div>
+                        
+                        <div class="write-review">
+                            <h3>Schreiben Sie eine Bewertung</h3>
+                            <form class="review-form" id="review-form">
+                                <div class="form-group">
+                                    <label>Bewertung</label>
+                                    <div class="rating-input">
+                                        <span class="star" data-value="1">☆</span>
+                                        <span class="star" data-value="2">☆</span>
+                                        <span class="star" data-value="3">☆</span>
+                                        <span class="star" data-value="4">☆</span>
+                                        <span class="star" data-value="5">☆</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Bewertungstitel</label>
+                                    <input type="text" id="review-title" placeholder="Beschreiben Sie kurz Ihre Erfahrung" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-text">Detaillierte Bewertung</label>
+                                    <textarea id="review-text" rows="5" placeholder="Teilen Sie Ihre Nutzungserfahrung mit..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary">Bewertung abschicken</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Häufig gestellte Fragen -->
+                    <div class="tab-pane" id="qna">
+                        <h2>Häufig gestellte Fragen</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Ist die Installation dieses Stehschreibtisches kompliziert?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Unser Produktdesign berücksichtigt die einfache Installation. Die meisten Kunden können die Montage in 30-60 Minuten abschließen. Wir bieten auch einen professionellen Installationsservice (gegen Aufpreis) an, den Sie beim Bestellen auswählen können.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Ist der Schreibtisch während der Höhenverstellung laut?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Das Pro Max Modell verwendet ultra-leise Motortechnologie mit einem Geräuschpegel unter 40 Dezibel, vergleichbar mit einer Bibliotheksumgebung. Es wird Ihre Arbeit oder Ruhe nicht stören.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Welche Garantie bieten Sie auf dieses Produkt?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Wir bieten eine 5-jährige Garantie auf den Motor und das Gestell sowie eine 2-jährige Garantie auf die Elektronik. Die Tischplatte hat eine 3-jährige Garantie gegen Materialfehler.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Kann ich die App auch auf mehreren Geräten verwenden?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Ja, die Shimo App kann auf mehreren Smartphones und Tablets installiert werden. Alle Geräte können den Schreibtisch steuern, solange sie mit demselben WLAN-Netzwerk verbunden sind.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Wie funktioniert die Sprachsteuerung?</h3>
+                                    <span class="toggle-icon">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Der Schreibtisch ist kompatibel mit Amazon Alexa und Google Assistant. Nach der Einrichtung können Sie Befehle wie "Alexa, stelle den Schreibtisch auf Stehhöhe" verwenden.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ask-question">
+                            <h3>Ihre Frage wurde nicht beantwortet?</h3>
+                            <form class="question-form" id="question-form">
+                                <div class="form-group">
+                                    <label for="question-text">Ihre Frage</label>
+                                    <textarea id="question-text" rows="3" placeholder="Bitte beschreiben Sie Ihre Frage detailliert..." required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question-contact">Kontaktinformationen</label>
+                                    <input type="email" id="question-contact" placeholder="E-Mail/Telefonnummer (optional)">
+                                </div>
+                                <button type="submit" class="btn-primary">Frage senden</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Verwandte Produktempfehlungen -->
+            <div class="related-products">
+                <h2>Das könnte Ihnen auch gefallen</h2>
+                <div class="related-products-grid">
+                    <div class="related-product">
+                        <a href="product-detail-de.html?id=102">
+                            <img src="picture/666.png" alt="Verwandtes Produkt 1" loading="lazy">
+                            <h3>Intelligenter Stifthalter</h3>
+                            <p class="price">337,87 €</p>
+                        </a>
+                    </div>
+                    <div class="related-product">
+                        <a href="product-detail-de.html?id=103">
+                            <img src="picture/667.png" alt="Verwandtes Produkt 2" loading="lazy">
+                            <h3>Lagerschränke</h3>
+                            <p class="price">259,87 €</p>
+                        </a>
+                    </div>
+                    <div class="related-product">
+                        <a href="product-detail-de.html?id=104">
+                            <img src="picture/668.png" alt="Verwandtes Produkt 3" loading="lazy">
+                            <h3>Aufbewahrungstasche</h3>
+                            <p class="price">129,87 €</p>
+                        </a>
+                    </div>
+                    <div class="related-product">
+                        <a href="product-detail-de.html?id=105">
+                            <img src="picture/669.png" alt="Verwandtes Produkt 4" loading="lazy">
+                            <h3>Intelligente Schubladen</h3>
+                            <p class="price">39,87 €</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Installationsvideo Abschnitt -->
+    <section class="installationsvideo-bereich">
+        <div class="container">
+            <h2 class="bereich-titel">Installationsvideo-Anleitung</h2>
+            <div class="video-inhalt-wrapper">
+                <!-- Videoplayer -->
+                <!-- 修改后的安装视频部分 -->
+                <div class="video-player">
+                    <!-- 添加 muted 属性实现静音 -->
+                    <video width="100%" height="400" controls autoplay loop muted>
+                        <source src="picture/vedio.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                
+                <!-- Videobeschreibung -->
+                <div class="video-beschreibung">
+                    <h3>Anleitung zur Montage des Shimo Smart Stehschreibtischs</h3>
+                    <p class="video-einfuehrung">Sehen Sie sich dieses 15-minütige Tutorial an, um zu erfahren, wie Sie Ihren höhenverstellbaren Schreibtisch schnell und richtig zusammenbauen.</p>
+                    
+                    <div class="installations-tipps">
+                        <h4><i class="icon-tipps"></i> Montagehinweise</h4>
+                        <ul>
+                            <li><strong>Dauer:</strong> Ca. 30-60 Minuten</li>
+                            <li><strong>Werkzeug:</strong> Beiliegender Inbusschlüssel + Kreuzschraubendreher (nicht im Lieferumfang enthalten)</li>
+                            <li><strong>Empfehlung:</strong> Für größere Tischplatten wird die Montage zu zweit empfohlen</li>
+                            <li><strong>Hinweis:</strong> Bewahren Sie alle Verpackungsmaterialien bis zur vollständigen Montage auf</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="download-aktionen">
+                        <a href="pdfs/montageanleitung.pdf" class="download-btn" download>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            </svg>
+                            Vollständige Anleitung herunterladen (PDF)
+                        </a>
+                        <a href="javascript:void(0)" class="support-kontakt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Montage-Support kontaktieren
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fußzeilen-Container -->
+    <div id="footer-container"></div>
+
+    <!-- Produktdetail-spezifische Skripte -->
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script>
+        // Deutsche Lokalisierung für JavaScript
+        window.productDetailConfig = {
+            language: 'de',
+            currency: '€',
+            currencyPosition: 'after',
+            messages: {
+                addedToCart: 'Zum Warenkorb hinzugefügt',
+                selectColor: 'Bitte wählen Sie eine Farbe',
+                selectSize: 'Bitte wählen Sie eine Größe',
+                reviewSubmitted: 'Bewertung erfolgreich übermittelt',
+                questionSubmitted: 'Frage erfolgreich gesendet',
+                error: 'Ein Fehler ist aufgetreten'
+            }
+        };
+    </script>
+</body>
+</html>

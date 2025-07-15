@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shimo Smart Standing Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="contact-en.html" class="lang-btn active" data-lang="en">English</a>
+                <a href="contact-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb">
+                <a href="index-en.html">Home</a> > <span>Contact Us</span>
+            </div>
+            <p class="contact-description">
+                Whether you have any questions, suggestions, or cooperation intentions, you can contact us through the following methods.
+                The Shimo team will provide you with professional and efficient service.
+            </p>
+        </div>
+    </section>
+
+    <!-- 联系信息和表单 -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/icons/phone.svg" alt="Phone">
+                        </div>
+                        <div class="info-content">
+                            <h3>Customer Service</h3>
+                            <p>400-888-6789</p>
+                            <p class="info-note">Monday to Sunday 9:00-21:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/icons/email.svg" alt="Email">
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>Customer Service: service@Shimo.com</p>
+                            <p>Business Cooperation: business@Shimo.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/icons/location.svg" alt="Address">
+                        </div>
+                        <div class="info-content">
+                            <h3>Company Address</h3>
+                            <p>Shimo Building, No.5 Kezhi West Road, Technology Park, Nanshan District, Shenzhen</p>
+                            <p class="info-note">Postal Code: 518057</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/icons/wechat.svg" alt="WeChat">
+                        </div>
+                        <div class="info-content">
+                            <h3>Official WeChat</h3>
+                            <p>Scan the QR code below to follow our official WeChat</p>
+                            <div class="qr-code">
+                                <img src="images/qrcode/wechat-qrcode.png" alt="WeChat QR Code">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Message Consultation</h2>
+                    <p class="form-intro">Please fill out the form below and we will reply to you within 1 business day</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Inquiry Subject <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select inquiry subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="order">Order Query</option>
+                                <option value="afterservice">After-sales Service</option>
+                                <option value="complaint">Complaints & Suggestions</option>
+                                <option value="cooperation">Business Cooperation</option>
+                                <option value="other">Other Issues</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message Content <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group verification">
+                            <label for="verification">Verification Code <span class="required">*</span></label>
+                            <div class="verification-container">
+                                <input type="text" id="verification" name="verification" required>
+                                <div class="verification-code">
+                                    <img src="images/verification-code.jpg" alt="Verification Code">
+                                    <a href="#" class="refresh-code">Refresh</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">I have read and agree to the <a href="privacy-en.html">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Stores -->
+    <section class="map-stores">
+        <div class="container">
+            <h2 class="section-title">Experience Stores Nationwide</h2>
+            <p class="stores-intro">
+                We have experience stores in major cities across the country. Welcome to experience the excellent quality and smart technology of Shimo smart standing desks.
+            </p>
+            
+            <div class="map-container">
+                <div id="chinaMap" class="china-map">
+                    <!-- Map will be loaded via JavaScript -->
+                    <img src="images/china-map.svg" alt="China Map" class="map-placeholder">
+                </div>
+                
+                <div class="store-list">
+                    <div class="store-tabs">
+                        <button class="store-tab active" data-region="north">North China</button>
+                        <button class="store-tab" data-region="east">East China</button>
+                        <button class="store-tab" data-region="south">South China</button>
+                        <button class="store-tab" data-region="west">West China</button>
+                    </div>
+                    
+                    <div class="store-panels">
+                        <div class="store-panel active" data-region="north">
+                            <div class="store-item">
+                                <h3>Beijing Flagship Store</h3>
+                                <p><strong>Address:</strong>Shimo Experience Center, No.88 Jianguo Road, Chaoyang District, Beijing</p>
+                                <p><strong>Phone:</strong>010-88889999</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="beijing">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Tianjin Store</h3>
+                                <p><strong>Address:</strong>4F, Henglong Plaza, No.128 Nanjing Road, Heping District, Tianjin</p>
+                                <p><strong>Phone:</strong>022-66667777</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="tianjin">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="east">
+                            <div class="store-item">
+                                <h3>Shanghai Flagship Store</h3>
+                                <p><strong>Address:</strong>46F, Henglong Plaza, No.1266 Nanjing West Road, Jing'an District, Shanghai</p>
+                                <p><strong>Phone:</strong>021-55556666</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="shanghai">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Hangzhou Store</h3>
+                                <p><strong>Address:</strong>2F, Huaxing Times Square, No.478 Wensan Road, Xihu District, Hangzhou</p>
+                                <p><strong>Phone:</strong>0571-88776655</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-21:30</p>
+                                <a href="#" class="btn-text view-map" data-store="hangzhou">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Nanjing Store</h3>
+                                <p><strong>Address:</strong>5F, Deji Plaza, No.18 Zhongshan Road, Xuanwu District, Nanjing</p>
+                                <p><strong>Phone:</strong>025-66554433</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="nanjing">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="south">
+                            <div class="store-item">
+                                <h3>Guangzhou Flagship Store</h3>
+                                <p><strong>Address:</strong>3F, Taikoo Hui Mall, No.385 Tianhe Road, Tianhe District, Guangzhou</p>
+                                <p><strong>Phone:</strong>020-33334444</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="guangzhou">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Shenzhen Store</h3>
+                                <p><strong>Address:</strong>2F, MixC Mall, No.9018 Shennan Avenue, Nanshan District, Shenzhen</p>
+                                <p><strong>Phone:</strong>0755-22223333</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="shenzhen">View Map</a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-panel" data-region="west">
+                            <div class="store-item">
+                                <h3>Chengdu Store</h3>
+                                <p><strong>Address:</strong>3F, IFS International Finance Center, No.1 Hongxing Road Section 3, Jinjiang District, Chengdu</p>
+                                <p><strong>Phone:</strong>028-66778899</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-22:00</p>
+                                <a href="#" class="btn-text view-map" data-store="chengdu">View Map</a>
+                            </div>
+                            
+                            <div class="store-item">
+                                <h3>Xi'an Store</h3>
+                                <p><strong>Address:</strong>4F, Laochenggen G-Park, No.88 Nanguan Zheng Street, Beilin District, Xi'an</p>
+                                <p><strong>Phone:</strong>029-88990011</p>
+                                <p><strong>Business Hours:</strong>Monday to Sunday 10:00-21:30</p>
+                                <a href="#" class="btn-text view-map" data-store="xian">View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How to check my order status?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            You can check your order status through the following methods:
+                        </p>
+                        <ol>
+                            <li>Log in to your Shimo account and check in "My Orders"</li>
+                            <li>Use the order number from your confirmation email to check on the "Order Inquiry" page</li>
+                            <li>Call customer service at 400-888-6789 with your order number</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the warranty period for Shimo products?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo smart standing desks provide industry-leading warranty service:
+                        </p>
+                        <ul>
+                            <li>Motor and control system: 5-year warranty</li>
+                            <li>Desk frame structure: 10-year warranty</li>
+                            <li>Desktop material: 3-year warranty</li>
+                            <li>Smart accessories: 2-year warranty</li>
+                        </ul>
+                        <p>For detailed warranty policy, please refer to <a href="warranty-en.html">Warranty Terms</a></p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How to install Shimo standing desk?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Shimo standing desk adopts modular design for easy installation. You can:
+                        </p>
+                        <ul>
+                            <li>Choose our professional installation service (free in some areas)</li>
+                            <li>Install by yourself following the installation manual included with the product</li>
+                            <li>Watch the <a href="installation-en.html">installation video tutorial</a> on our website</li>
+                        </ul>
+                        <p>If you have any installation questions, please contact our customer service hotline for support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods does Shimo standing desk support?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We support multiple payment methods, including:
+                        </p>
+                        <ul>
+                            <li>Credit card/debit card payment</li>
+                            <li>Alipay/WeChat Pay</li>
+                            <li>Bank transfer</li>
+                            <li>Installment payment (supports Huabei, JD Baitiao, etc.)</li>
+                        </ul>
+                        <p>For corporate purchases, please contact our business team for more payment options.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How to apply for returns and exchanges?</h3>
+                        <span class="faq-toggle"></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We provide 7-day no-reason return and exchange service (product unused and packaging intact). The application process is as follows:
+                        </p>
+                        <ol>
+                            <li>Log in to your personal account and click "Apply for Return/Exchange" on the order details page</li>
+                            <li>Fill in the reason for return/exchange and submit</li>
+                            <li>Customer service staff will contact you within 24 hours to arrange return/exchange matters</li>
+                        </ol>
+                        <p>Note: Customized products, installed or used products may not be applicable to the 7-day no-reason return and exchange policy. Please refer to <a href="return-policy-en.html">Return and Exchange Policy</a> for details.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-questions">
+                <p>Didn't find the answer you need?</p>
+                <a href="faq-en.html" class="btn-secondary">View More FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooperation Opportunities -->
+    <section class="cooperation">
+        <div class="container">
+            <div class="cooperation-content">
+                <div class="cooperation-text">
+                    <h2>Cooperation Opportunities</h2>
+                    <p>
+                        Shimo is committed to establishing long-term, mutually beneficial cooperative relationships with partners from various industries.
+                        Whether you are an agent, distributor, office furniture retailer, corporate purchaser, designer, media, or other related field partners,
+                        we warmly welcome you to join us.
+                    </p>
+                    <h3>Cooperation Opportunities We Offer</h3>
+                    <ul class="cooperation-list">
+                        <li>Brand agency and distribution cooperation</li>
+                        <li>Corporate customization and bulk purchasing</li>
+                        <li>Designer cooperation program</li>
+                        <li>Media and brand joint promotion</li>
+                        <li>Technology innovation and product development cooperation</li>
+                    </ul>
+                    <a href="cooperation-en.html" class="btn-primary">Learn More About Cooperation</a>
+                </div>
+                <div class="cooperation-image">
+                    <img src="images/cooperation.jpg" alt="Cooperation Opportunities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化FAQ折叠功能
+            initFaqToggle();
+            
+            // 初始化地图和门店切换
+            initStoreMap();
+            
+            // 表单验证
+            initContactForm();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimo - Smart Standing Desk Official Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="index-en.html" class="lang-btn active" data-lang="en">English</a>
+                <a href="index-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="../picture/beijing.png" alt="背景图片" class="hero-background">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Smart Standing Desk</h1>
+                <p class="hero-subtitle">Al-Powered Recommendations for Your Perfect Workspace</p>
+                <div class="hero-buttons">
+                    <a href="ai-recommend-en.html" class="btn-primary">Start Al Recommendabtion</a>
+                    <a href="ai-chat-en.html" class="btn-primary">Smart Assistant</a>
+                    <a href="products-en.html" class="btn-secondary">Browse Products</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="desk-animation">
+                    <div class="desk-surface"></div>
+                    <div class="desk-legs">
+                        <div class="leg left"></div>
+                        <div class="leg right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Category Preview -->
+    <section class="category-preview">
+        <div class="container">
+            <h2 class="section-title">Product Series</h2>
+            <div class="category-cards">
+                <a href="basic-products-en.html" class="category-card">
+                    <img src="picture/21.png" alt="Basic Standing Desk">
+                    <h3>Basic Standing Desk</h3>
+                    <p>Simple and practical classic choice</p>
+                </a>
+                <a href="premium-products-en.html" class="category-card">
+                    <img src="picture/22.png" alt="Premium Standing Desk">
+                    <h3>Premium Standing Desk</h3>
+                    <p>High-end materials and extended features</p>
+                </a>
+                <a href="smart-products-en.html" class="category-card">
+                    <img src="picture/23.png" alt="Smart Standing Desk">
+                    <h3>Smart Standing Desk</h3>
+                    <p>AI-driven intelligent office solution</p>
+                </a>
+            </div>
+            <div class="view-all">
+                <a href="products-en.html" class="btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Recommendations</h2>
+            <p class="section-subtitle">Intelligent recommendations based on user browsing data</p>
+            <div class="trending-products" id="trendingProducts">
+                <!-- Trending products will be dynamically loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Shimo?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Recommendation System</h3>
+                    <p>Advanced AI algorithms analyze your needs and recommend the perfect desk for you</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Precise Height Adjustment</h3>
+                    <p>Millimeter-accurate height adjustment with memory function for different users</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmentally Friendly Materials</h3>
+                    <p>Sustainable and eco-friendly materials for a healthy working environment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>5 Year Warranty</h3>
+                    <p>Comprehensive warranty and professional after-sales service for your peace of mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Shimo desk completely changed the way I work. The AI recommendation was perfect for my needs!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/36.png" alt="Customer 1">
+                        <div class="author-info">
+                            <h4>Anna Johnson</h4>
+                            <span>Software Developer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excellent quality and design. The desk is not only functional but also very elegant."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/34.png" alt="Customer 2">
+                        <div class="author-info">
+                            <h4>Michael Brown</h4>
+                            <span>Architect</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The customer service is top-notch. Fast delivery and easy installation."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="picture/35.png" alt="Customer 3">
+                        <div class="author-info">
+                            <h4>Sarah Wilson</h4>
+                            <span>Graphic Designer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Brief -->
+    <section class="company-brief">
+        <div class="container">
+            <h2 class="section-title">About Shimo</h2>
+            <p class="company-intro">Shimo is a leading smart standing desk brand in China, dedicated to creating healthy and comfortable working environments through innovative technology. Our products combine ergonomic design with intelligent control technology to provide users with professional office solutions.</p>
+            <div class="company-stats">
+                <div class="stat-item">
+                    <h3>50,000+</h3>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Product Models</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5 Years</h3>
+                    <p>Warranty</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+            <a href="about-en.html" class="btn-text">Learn More →</a>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Are Standing Desks Worth It? A Comprehensive Guide</h3>
+                        <p>Standing desks have become a popular fixture in modern workplaces and home offices, often hailed for their health and productivity benefits. But are standing desks really worth the investment? In this article, we’ll explore the advantages and potential downsides of...</p>
+                        <a href="news-detail-en.html?id=1" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Are Standing Desks Worth It? A Comprehensive Guide</h3>
+                        <p>Standing desks have become a popular fixture in modern workplaces and home offices, often hailed for their health and productivity benefits. But are standing desks really worth the investment? In this article, we’ll explore the advantages and potential downsides of...</p>
+                       <a href="news-detail-en.html?id=2" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                        <span class="news-date">Apr 09, 2025</span>
+                        <h3>Are Standing Desks Worth It? A Comprehensive Guide</h3>
+                        <p>Standing desks have become a popular fixture in modern workplaces and home offices, often hailed for their health and productivity benefits. But are standing desks really worth the investment? In this article, we’ll explore the advantages and potential downsides of...</p>
+                        <a href="news-detail-en.html?id=3" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="news-en.html" class="btn-outline">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Your Perfect Workspace?</h2>
+                <p>Let our AI find the ideal desk for you</p>
+                <div class="cta-buttons">
+                    <a href="ai-recommend-en.html" class="btn-primary">Start AI Recommendation Now</a>
+                    <a href="contact-en.html" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Chat Button -->
+    <div class="chat-float-button" id="chatFloatButton">
+        <i class="fas fa-comments"></i>
+        <span class="chat-tooltip">Smart Customer Service</span>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Höhenverstellbare Schreibtische - Shimo Smart Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/premium-products.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="premium-products-en.html" class="lang-btn">English</a>
+                <a href="premium-products-de.html" class="lang-btn active">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品页面头部 -->
+    <section class="page-header premium-header">
+        <div class="container">
+            <h1>Premium Höhenverstellbare Schreibtische</h1>
+            <div class="breadcrumb">
+                <a href="index-de.html">Startseite</a> > <a href="products-de.html">Produkte</a> > <span>Premium</span>
+            </div>
+            <p class="category-description">
+                Shimo Premium höhenverstellbare Schreibtische verwenden hochwertige Materialien und exzellente Verarbeitung, um ein luxuriöses Büroerlebnis für anspruchsvolle Benutzer zu bieten.
+                Jedes Produkt durchläuft strenge Qualitätskontrollen und Leistungstests, um Stabilität und Langlebigkeit zu gewährleisten.
+            </p>
+        </div>
+    </section>
+
+    <!-- 产品分类导航 -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="products-de.html" class="category-tab">Alle</a>
+                <a href="basic-products-de.html" class="category-tab">Basic</a>
+                <a href="premium-products-de.html" class="category-tab active">Premium</a>
+                <a href="smart-products-de.html" class="category-tab">Smart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品筛选器 -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Preisbereich</label>
+                    <select id="priceFilter">
+                        <option value="all">Alle Preise</option>
+                        <option value="2000-3000">€200-300</option>
+                        <option value="3000-4000">€300-400</option>
+                        <option value="4000+">Über €400</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Tischmaterial</label>
+                    <select id="materialFilter">
+                        <option value="all">Alle Materialien</option>
+                        <option value="solid-wood">Hochwertiges Massivholz</option>
+                        <option value="marble">Marmor</option>
+                        <option value="tempered-glass">Gehärtetes Glas</option>
+                        <option value="carbon-fiber">Kohlefaser</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Spezielle Funktionen</label>
+                    <select id="featureFilter">
+                        <option value="all">Alle Funktionen</option>
+                        <option value="memory">Mehrere Speicherpositionen</option>
+                        <option value="anti-collision">Kollisionsschutz</option>
+                        <option value="cable-management">Kabelmanagement</option>
+                        <option value="usb">USB-Ladeanschlüsse</option>
+                    </select>
+                </div>
+                <button id="applyFilters" class="btn-primary">Filter anwenden</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品列表 -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-container" id="premiumProductsGrid">
+                <!-- 高端款产品将通过JavaScript动态加载 -->
+                <!-- 以下是静态示例 -->
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="picture/141.png" alt="Business Elite Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Business Elite Schreibtisch</h3>
+                        <p class="product-price">€349,90</p>
+                        <div class="product-features">
+                            <span>Massivholzplatte</span>
+                            <span>Dualer Motorantrieb</span>
+                            <span>4 Speicherpositionen</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p001" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p001">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge new">Neu</div>
+                    <div class="product-image">
+                        <img src="picture/142.png" alt="Executive Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Executive Schreibtisch</h3>
+                        <p class="product-price">€429,90</p>
+                        <div class="product-features">
+                            <span>Marmorplatte</span>
+                            <span>Leiser Motor</span>
+                            <span>Integrierte USB-Anschlüsse</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p002" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p002">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/143.png" alt="Designer Profi-Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Profi-Schreibtisch</h3>
+                        <p class="product-price">€389,90</p>
+                        <div class="product-features">
+                            <span>Extragroße Tischplatte</span>
+                            <span>Kollisionsschutz</span>
+                            <span>Kabelmanagement-System</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p003" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p003">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/144.png" alt="Luxus Konferenz-Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxus Konferenz-Schreibtisch</h3>
+                        <p class="product-price">€549,90</p>
+                        <div class="product-features">
+                            <span>Kohlefaser-Tischplatte</span>
+                            <span>Hohe Tragfähigkeit</span>
+                            <span>Integriertes kabelloses Laden</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p004" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p004">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Limitiert</div>
+                    <div class="product-image">
+                        <img src="picture/145.png" alt="Künstler-Schreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Künstler-Edition Schreibtisch</h3>
+                        <p class="product-price">€489,90</p>
+                        <div class="product-features">
+                            <span>Künstlerisches Design</span>
+                            <span>LED-Ambiente-Beleuchtung</span>
+                            <span>Abnehmbare Zubehörteile</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p005" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p005">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="picture/146.png" alt="Premium L-förmiger Eckschreibtisch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium L-förmiger Eckschreibtisch</h3>
+                        <p class="product-price">€599,90</p>
+                        <div class="product-features">
+                            <span>L-Form Design</span>
+                            <span>Drei-Motor-Antrieb</span>
+                            <span>Intelligente Temperaturregelung</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="product-detail-de.html?id=p006" class="btn-secondary">Details</a>
+                            <button class="btn-primary add-to-cart" data-product-id="p006">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <button class="page-btn" data-page="prev">Vorherige</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn" data-page="next">Nächste</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐搭配 -->
+    <section class="recommended-combos">
+        <div class="container">
+            <h2 class="section-title">Empfohlene Kombinationen</h2>
+            <p class="section-subtitle">Diese Zubehörteile passen perfekt zu Ihrem Premium-Schreibtisch</p>
+            
+            <div class="combo-slider">
+                <div class="combo-item">
+                    <img src="picture/147.png" alt="Ergonomischer Stuhl">
+                    <h4>Premium Ergonomischer Stuhl</h4>
+                    <p class="combo-price">€249,90</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a001">In den Warenkorb</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="picture/148.png" alt="Monitor-Halterung">
+                    <h4>Aluminium Monitor-Halterung</h4>
+                    <p class="combo-price">€69,90</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a002">In den Warenkorb</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="picture/149.png" alt="Kabelmanagement-Set">
+                    <h4>Premium Kabelmanagement-Set</h4>
+                    <p class="combo-price">€29,90</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a003">In den Warenkorb</button>
+                </div>
+                
+                <div class="combo-item">
+                    <img src="picture/150.png" alt="Schreibtischunterlage">
+                    <h4>Echtleder Schreibtischunterlage</h4>
+                    <p class="combo-price">€39,90</p>
+                    <button class="btn-secondary add-to-cart" data-product-id="a004">In den Warenkorb</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2 class="section-title">Kundenbewertungen</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="picture/151.png" alt="Benutzer-Avatar" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Herr Schmidt</h4>
+                                <div class="rating">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">15.03.2024</span>
+                    </div>
+                    <p class="review-text">
+                        Ich habe den Business Elite Schreibtisch seit einem Monat im Einsatz und bin begeistert von der Qualität. Die Tischplatte ist hochwertig, und die Höhenverstellung funktioniert gleichmäßig und geräuschlos. Die Speicherfunktion ist besonders praktisch, um schnell zwischen verschiedenen Höhen zu wechseln. Der Kundenservice war ebenfalls hervorragend und hat alle meine Fragen bei der Installation sofort beantwortet. Sehr empfehlenswert!
+                    </p>
+                    <div class="review-product">Gekauftes Produkt: Business Elite Schreibtisch</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="picture/152.png" alt="Benutzer-Avatar" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Frau Müller</h4>
+                                <div class="rating">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">28.02.2024</span>
+                    </div>
+                    <p class="review-text">
+                        Die Marmorplatte des Executive Schreibtischs ist wirklich wunderschön und fühlt sich hochwertig an. Die integrierten USB-Anschlüsse sind ein durchdachtes Detail und sparen mir einen Ladestecker. Der einzige kleine Nachteil ist das Gewicht der Tischplatte, für den Transport sind zwei Personen nötig. Insgesamt bin ich mit meinem Kauf sehr zufrieden.
+                    </p>
+                    <div class="review-product">Gekauftes Produkt: Executive Schreibtisch</div>
+                </div>
+            </div>
+            <div class="view-more">
+                <button class="btn-text" id="loadMoreReviews">Mehr Bewertungen anzeigen ↓</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/premium-products.js"></script>
+    <script>
+        // 初始化高端款产品页面特定的功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 加载高端款产品数据
+            loadPremiumProducts('de');
+            
+            // 初始化筛选器
+            initPremiumFilters('de');
+            
+            // 初始化推荐搭配滑块
+            initComboSlider();
+            
+            // 加载更多评价按钮事件
+            document.getElementById('loadMoreReviews').addEventListener('click', function() {
+                loadMoreReviews('premium', 'de');
+            });
+            
+        });
+    </script>
+</body>
+</html>

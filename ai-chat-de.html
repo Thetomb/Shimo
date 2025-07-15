@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Chat - Shimo Smart Stehschreibtisch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ai-chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div id="navbar-container"></div>
+    
+    <!-- 语言切换 -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>Deutsch</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="ai-chat-en.html" class="lang-btn">English</a>
+                <a href="ai-chat-de.html" class="lang-btn active">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回按钮 - 已修改为返回首页 -->
+    <div class="back-button">
+        <a href="index-de.html" class="btn-secondary">Zur Startseite</a>
+    </div>
+
+    <!-- AI聊天区域 -->
+    <section class="ai-chat">
+        <div class="container">
+            <h2 class="section-title">Intelligente Empfehlungen</h2>
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-box" id="chatBox">
+                    <!-- 聊天记录将动态添加到这里 -->
+                </div>
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="Geben Sie Ihre Frage ein..." />
+                    <button id="sendButton" class="btn-primary">Senden</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-chat.js"></script>
+</body>
+</html>

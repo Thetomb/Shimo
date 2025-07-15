@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimo - Smart Standing Desk Official Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="index-en.html" class="lang-btn active" data-lang="en">English</a>
+                <a href="index-de.html" class="lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Smart Standing Desks</h1>
+                <p class="hero-subtitle">AI-customized recommendations for your personal workspace</p>
+                <div class="hero-buttons">
+                    <a href="landing-en.html" class="btn-primary">Experience Landing Page</a>
+                    <a href="ai-recommend-en.html" class="btn-primary">Start AI Recommendation</a>
+                    <a href="ai-chat-en.html" class="btn-primary">Smart Customer Service</a>
+                    <a href="products-en.html" class="btn-secondary">Browse Products</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="desk-animation">
+                    <div class="desk-surface"></div>
+                    <div class="desk-legs">
+                        <div class="leg left"></div>
+                        <div class="leg right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Category Preview -->
+    <section class="category-preview">
+        <div class="container">
+            <h2 class="section-title">Product Series</h2>
+            <div class="category-cards">
+                <a href="basic-products-en.html" class="category-card">
+                    <img src="images/basic-desk.jpg" alt="Basic Standing Desk">
+                    <h3>Basic Standing Desk</h3>
+                    <p>Simple and practical classic choice</p>
+                </a>
+                <a href="premium-products-en.html" class="category-card">
+                    <img src="images/premium-desk.jpg" alt="Premium Standing Desk">
+                    <h3>Premium Standing Desk</h3>
+                    <p>High-end materials and extended features</p>
+                </a>
+                <a href="smart-products-en.html" class="category-card">
+                    <img src="images/smart-desk.jpg" alt="Smart Standing Desk">
+                    <h3>Smart Standing Desk</h3>
+                    <p>AI-driven intelligent office solution</p>
+                </a>
+                <a href="accessories-en.html" class="category-card">
+                    <img src="images/accessories.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <p>Complementary products for the perfect workspace</p>
+                </a>
+            </div>
+            <div class="view-all">
+                <a href="products-en.html" class="btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Recommendations</h2>
+            <p class="section-subtitle">Intelligent recommendations based on user browsing data</p>
+            <div class="trending-products" id="trendingProducts">
+                <!-- Trending products will be dynamically loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Brief -->
+    <section class="company-brief">
+        <div class="container">
+            <h2 class="section-title">About Shimo</h2>
+            <p class="company-intro">Shimo is a leading smart standing desk brand in China, dedicated to creating healthy and comfortable working environments through innovative technology. Our products combine ergonomic design with intelligent control technology to provide users with professional office solutions.</p>
+            <div class="company-stats">
+                <div class="stat-item">
+                    <h3>50,000+</h3>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Product Models</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5 Years</h3>
+                    <p>Warranty</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+            <a href="about-en.html" class="btn-text">Learn More →</a>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="images/news1.jpg" alt="New AI Technology">
+                    <div class="news-content">
+                        <span class="news-date">December 15, 2024</span>
+                        <h3>Shimo Launches New AI Recommendation Technology</h3>
+                        <p>Our latest AI system can provide more accurate product recommendations based on user habits...</p>
+                        <a href="news-detail.html?id=1" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news2.jpg" alt="New Product Series">
+                    <div class="news-content">
+                        <span class="news-date">December 10, 2024</span>
+                        <h3>New Smart Professional Series Officially Released</h3>
+                        <p>The Smart Professional Series features extended smart functions and improved design, now available for purchase...</p>
+                        <a href="news-detail.html?id=2" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="images/news3.jpg" alt="Award">
+                    <div class="news-content">
+                        <span class="news-date">December 5, 2024</span>
+                        <h3>Shimo Wins "Best Ergonomic Innovation" Award</h3>
+                        <p>At the International Office Furniture Exhibition, Shimo was awarded for its outstanding ergonomic innovation...</p>
+                        <a href="news-detail.html?id=3" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="news-en.html" class="btn-outline">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Perfect Workspace?</h2>
+                <p>Let our AI find the ideal standing desk for you</p>
+                <div class="cta-buttons">
+                    <a href="ai-recommend-en.html" class="btn-primary">Start AI Recommendation Now</a>
+                    <a href="contact-en.html" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Chat Button -->
+    <div class="chat-float-button" id="chatFloatButton">
+        <i class="fas fa-comments"></i>
+        <span class="chat-tooltip">Smart Customer Service</span>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>

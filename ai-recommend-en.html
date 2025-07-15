@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Recommendation - Shimo Smart Standing Desk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ai-recommend.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <!-- Navigation bar container -->
+    <div id="navbar-container"></div>
+    
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <div class="dropdown-toggle" id="languageToggle">
+                <span>English</span>
+            </div>
+            <div class="dropdown-menu" id="languageMenu">
+                <a href="ai-recommend-en.html" class="lang-btn active">English</a>
+                <a href="ai-recommend-de.html" class="lang-btn">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI recommendation header -->
+    <section class="ai-header">
+        <div class="container">
+            <h1>AI Smart Recommendation System</h1>
+            <p class="ai-description">
+                Based on your work habits, height, office environment, and budget, our AI system will 
+                recommend the most suitable standing desk solution for you. Simply answer a few questions 
+                to receive personalized professional advice.
+            </p>
+        </div>
+    </section>
+
+    <!-- AI recommendation form -->
+    <section class="ai-recommend-section">
+        <div class="container">
+            <div class="ai-form-container">
+                <form id="aiRecommendForm" class="ai-form">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%"></div>
+                        </div>
+                        <div class="progress-steps">
+                            <div class="step active">1</div>
+                            <div class="step">2</div>
+                            <div class="step">3</div>
+                            <div class="step">4</div>
+                            <div class="step">5</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 1: Basic Information -->
+                    <div class="form-step active" data-step="1">
+                        <h2>Basic Information</h2>
+                        <div class="form-group">
+                            <label for="height">Your Height (inches)</label>
+                            <input type="number" id="height" name="height" min="55" max="87" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Work Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="computer" required checked>
+                                    <span class="radio-text">Computer Work</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="design">
+                                    <span class="radio-text">Design/Creative Work</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="gaming">
+                                    <span class="radio-text">Gaming/Entertainment</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="workType" value="mixed">
+                                    <span class="radio-text">Multi-purpose</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-primary next-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Usage Habits -->
+                    <div class="form-step" data-step="2">
+                        <h2>Usage Habits</h2>
+                        <div class="form-group">
+                            <label>How many hours do you sit at work daily on average?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="less4" required checked>
+                                    <span class="radio-text">Less than 4 hours</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="4to6">
+                                    <span class="radio-text">4-6 hours</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="6to8">
+                                    <span class="radio-text">6-8 hours</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="sittingHours" value="more8">
+                                    <span class="radio-text">More than 8 hours</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you have the habit or willingness to work standing?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="frequent" required checked>
+                                    <span class="radio-text">Frequently stand while working</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="sometimes">
+                                    <span class="radio-text">Occasionally stand</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="rarely">
+                                    <span class="radio-text">Rarely stand</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="standingHabit" value="want">
+                                    <span class="radio-text">Want to develop the habit</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">Previous</button>
+                            <button type="button" class="btn-primary next-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Office Environment -->
+                    <div class="form-step" data-step="3">
+                        <h2>Office Environment</h2>
+                        <div class="form-group">
+                            <label for="deskSpace">Available Desk Space (inches)</label>
+                            <div class="dimension-inputs">
+                                <div class="dimension-input">
+                                    <input type="number" id="deskWidth" name="deskWidth" placeholder="Width" min="32" max="118" required>
+                                    <span>×</span>
+                                    <input type="number" id="deskDepth" name="deskDepth" placeholder="Depth" min="20" max="79" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>What is your office environment?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="home" required checked>
+                                    <span class="radio-text">Home Office</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="office">
+                                    <span class="radio-text">Corporate Office</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="shared">
+                                    <span class="radio-text">Shared Workspace</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="environment" value="other">
+                                    <span class="radio-text">Other</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">Previous</button>
+                            <button type="button" class="btn-primary next-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Budget & Requirements -->
+                    <div class="form-step" data-step="4">
+                        <h2>Budget & Requirements</h2>
+                        <div class="form-group">
+                            <label>What is your budget range?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="under300" required checked>
+                                    <span class="radio-text">Under \$300</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="300to450">
+                                    <span class="radio-text">\$300-450</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="450to750">
+                                    <span class="radio-text">\$450-750</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="budget" value="above750">
+                                    <span class="radio-text">Above \$750</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Which features of the standing desk do you value most? (Multiple selections allowed)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="stability" checked>
+                                    <span class="checkbox-text">Stability</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="noise">
+                                    <span class="checkbox-text">Quiet Operation</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="design">
+                                    <span class="checkbox-text">Aesthetic Design</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="smart">
+                                    <span class="checkbox-text">Smart Features</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="storage">
+                                    <span class="checkbox-text">Storage Space</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="warranty">
+                                    <span class="checkbox-text">Warranty Service</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">Previous</button>
+                            <button type="button" class="btn-primary next-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5: Special Requirements -->
+                    <div class="form-step" data-step="5">
+                        <h2>Special Requirements</h2>
+                        <div class="form-group">
+                            <label>Do you need any of the following special features? (Multiple selections allowed)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="monitor-arm">
+                                    <span class="checkbox-text">Monitor Arm</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="cable-management">
+                                    <span class="checkbox-text">Cable Management System</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="usb-charging">
+                                    <span class="checkbox-text">USB Charging Ports</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="drawer">
+                                    <span class="checkbox-text">Drawer/Storage</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="specialFeatures" value="anti-collision">
+                                    <span class="checkbox-text">Anti-collision System</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Other special requirements or notes</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Please describe your other requirements..."></textarea>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="btn-secondary prev-btn">Previous</button>
+                            <button type="submit" class="btn-primary">Get Recommendation</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI analyzing -->
+    <section class="ai-analyzing" style="display: none;">
+        <div class="container">
+            <div class="analyzing-content">
+                <div class="analyzing-animation">
+                    <div class="pulse"></div>
+                    <img src="picture/ai-brain.svg" alt="AI Analysis" class="ai-icon">
+                </div>
+                <h2>AI is analyzing your requirements...</h2>
+                <p>Considering multiple factors to find the best standing desk solution for you</p>
+                <div class="analyzing-progress">
+                    <div class="analyzing-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation results -->
+    <section class="recommendation-results" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <h2>Your Personalized Recommendation</h2>
+                <p>Based on the information you provided, we have selected the most suitable standing desk products for you</p>
+            </div>
+            
+            <div class="recommendation-match">
+                <div class="match-percentage">98%</div>
+                <div class="match-text">
+                    <h3>Match Rate</h3>
+                    <p>This product perfectly fits your needs</p>
+                </div>
+            </div>
+            
+            <div class="top-recommendation">
+                <div class="product-image">
+                    <img id="recommendedProductImage" src="picture/kuan.png" alt="Recommended Product">
+                </div>
+                <div class="product-details">
+                    <h3 id="recommendedProductName">L-Shaped Workstation</h3>
+                    <p class="product-price" id="recommendedProductPrice">\$599</p>
+                    <div class="recommendation-reasons">
+                        <h4>Why we recommend this product</h4>
+                        <ul id="recommendationReasons">
+                            <li>Create Instant Active Standing: Go from sitting to standing in one smooth motion with this complete corner workstation providing comfortable viewing angles and customized user heights. Perfect for a corner desk or office space divider                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <a href="product-detail-en.html" id="viewDetailsLink" class="btn-secondary">View Details</a>
+                        <button class="btn-primary add-to-cart" id="recommendedAddToCart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alternative-recommendations">
+                <h3>Other Recommendations</h3>
+                <div class="alt-products-grid">
+                    <div class="alt-product-card">
+                        <div class="alt-match">92%</div>
+                        <img src="picture/210.png" alt="AI Smart Assistant Standing Desk">
+                        <h4>AI Smart Assistant Standing Desk</h4>
+                        <p class="alt-price">\$645</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                    
+                    <div class="alt-product-card">
+                        <div class="alt-match">85%</div>
+                        <img src="picture/211.png" alt="Business Elite Standing Desk">
+                        <h4>Business Elite Standing Desk</h4>
+                        <p class="alt-price">\$525</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                    
+                    <div class="alt-product-card">
+                        <div class="alt-match">78%</div>
+                        <img src="picture/212.png" alt="Classic Stable Standing Desk">
+                        <h4>Classic Stable Standing Desk</h4>
+                        <p class="alt-price">\$375</p>
+                        <a href="product-detail-en.html" class="btn-text">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommended-accessories">
+                <h3>Recommended Accessories</h3>
+                <div class="accessories-grid">
+                    <div class="accessory-card">
+                        <img src="picture/213.png" alt="Ergonomic Chair">
+                        <h4>Ergonomic Chair</h4>
+                        <p class="accessory-description">Perfect complement to your standing desk, providing all-day comfort support</p>
+                        <p class="accessory-price">\$195</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a001">Add to Cart</button>
+                    </div>
+                    
+                    <div class="accessory-card">
+                        <img src="picture/214.png" alt="Monitor Arm">
+                        <h4>Monitor Arm</h4>
+                        <p class="accessory-description">Flexibly adjust monitor height and angle, reducing neck strain</p>
+                        <p class="accessory-price">\$60</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a002">Add to Cart</button>
+                    </div>
+                    
+                    <div class="accessory-card">
+                        <img src="picture/215.png" alt="Cable Management Kit">
+                        <h4>Cable Management Kit</h4>
+                        <p class="accessory-description">Keep your desktop tidy, prevent cable tangling and damage</p>
+                        <p class="accessory-price">\$30</p>
+                        <button class="btn-secondary add-to-cart" data-product-id="a003">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="save-results">
+                <button class="btn-primary" id="saveRecommendation">Save Recommendation</button>
+                <button class="btn-secondary" id="startNewRecommendation">Start New Recommendation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User feedback -->
+    <section class="ai-feedback">
+        <div class="container">
+            <h2>User Reviews of AI Recommendations</h2>
+            <div class="feedback-stats">
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Users satisfied with recommendations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24,568</div>
+                    <div class="stat-label">Completed recommendations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Purchased recommended products</div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="quote">"The AI recommendation system is amazing! The standing desk it recommended perfectly fits my needs, especially considering my height and work habits."</div>
+                    <div class="testimonial-author">
+                        <img src="picture/203.png" alt="User Avatar">
+                        <div>
+                            <div class="author-name">John Smith</div>
+                            <div class="author-info">Freelancer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">"I was initially skeptical about AI recommendations, but the results were surprisingly accurate. The recommended standing desk not only fits my budget but also has all the features I value most."</div>
+                    <div class="testimonial-author">
+                        <img src="picture/205.png" alt="User Avatar">
+                        <div>
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-info">Designer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">"Saved me a lot of time comparing different models. The AI system considered factors I hadn't thought of, like the compatibility between desktop material and my work type."</div>
+                    <div class="testimonial-author">
+                        <img src="picture/204.png" alt="User Avatar">
+                        <div>
+                            <div class="author-name">Mike Wilson</div>
+                            <div class="author-info">IT Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer container -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-recommend.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AI recommendation form
+            initAiRecommendForm();
+        });
+    </script>
+</body>
+</html>
